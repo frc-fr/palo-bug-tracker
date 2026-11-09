@@ -1,0 +1,4 @@
+{"path": "pan-os/10-0/pan-os-release-notes/pan-os-10-0-addressed-issues/pan-os-10-0-12-h6-addressed-issues", "branch": "10.0", "kind": "addressed", "title": "PAN-OS 10.0.12-h6 Addressed Issues", "version": "10.0.12-h6", "skipped": 0, "issues": [
+  {"ids": ["PAN-209147"], "description": "(PA-5200 and PA-5400 firewalls only) Fixed an issue where autocommits failed after an upgrade due to the RAID mdadm configuration being removed and RAID subsequently going into a read-only state.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-191222"], "description": "Fixed an issue where Panorama became inaccessible when after a push to the collector group.", "workaround": null, "resolved_in": null}
+]}

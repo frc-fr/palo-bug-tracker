@@ -1,0 +1,5 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-10-known-and-addressed-issues/pan-os-10-1-10-h9-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.10-h9 Addressed Issues", "version": "10.1.10-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267338"], "description": "Fixed an issue where GlobalProtect logs were not available after a tunnel teardown between the satellite and the gateway.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-167662"], "description": "Fixed an issue where the rasmgr process stopped responding when it was processing a large number of messages.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,23 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-11-known-and-addressed-issues/pan-os-10-2-11-h12-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.11-h12 Addressed Issues", "version": "10.2.11-h12", "skipped": 0, "issues": [
+  {"ids": ["PAN-279604"], "description": "Fixed an issue where scheduled SaaS application usage reports were generated incorrectly, and the login page was displayed instead of the report content.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273994"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273971"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273278"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-271926"], "description": "Fixed an issue where TLS 1.3 decryption failed with a bad record MAC error when the firewall was configured to decrypt and inspect TLS traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-270549"], "description": "Fixed an issue where some TLS connections were not handled correctly, which led to instability in the dataplane.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-269731"], "description": "Fixed an issue where Panorama did not display logs from firewalls after upgrading to PAN-OS 10.2.11 on devices due to Elasticsearch (ES) getting restarted continuously.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268727"], "description": "Fixed an issue where traffic was dropped when the accumulation proxy was enabled and header insertion modified packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268319"], "description": "Fixed an issue where Receive Time and Time Generated were not visible as attributes in the Filter Builder for system logs and URL filtering logs.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268260"], "description": "Fixed an issue on hardware firewalls where, when SSL decryption was enabled and Client Hello messages spanned multiple TCP segments, some SSL decrypted sessions failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267781"], "description": "Fixed an issue where Panorama did not display the Source Dynamic Address Group.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264762"], "description": "Fixed an issue where the firewall showed the status of SFP+ interfaces as not up, or up but not configured, when a PAN-SFP-PLUS-SR cable was connected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263465"], "description": "Fixed an issue where the logrcvr process stopped responding due to a memory leak and buffer overrun.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261739"], "description": "(VM-Series firewalls in Microsoft Azure environments only) Fixed an issue where the firewall displayed 0 for the physical port counters read from MAC.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259351"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-256051"], "description": "Fixed an issue on the firewall where enabling flow basic caused the firewall to stop responding due to a masterd process restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255619"], "description": "Fixed an intermittent issue where file downloads from websites failed when decrypting HTTP/2 traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-249597"], "description": "Fixed an issue where the Policy page on the Panorama web interface was slower than expected when a device group had a large number of managed devices.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-241004"], "description": "Fixed an issue where DNS Proxy dropped client requests of the type ns for a root domain.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233965"], "description": "Fixed an issue here the tund process stopped responding, which caused push operation to managed firewalls or making changes to local firewalls to fail.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230825"], "description": "Fixed an issue where link flaps occurred on Panorama appliances in HA configurations.", "workaround": null, "resolved_in": null}
+]}

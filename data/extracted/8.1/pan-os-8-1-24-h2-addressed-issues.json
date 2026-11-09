@@ -1,0 +1,5 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-24-h2-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.24-h2 Addressed Issues", "version": "8.1.24-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-208218"], "description": "(Releases earlier than PAN-OS 8.1.24-h2) Due to a component change, versions earlier than PAN-OS 8.1.24-h2 are no longer supported on later hardware revisions of the PA-5200 Series.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-204830"], "description": "Fixed an issue where logging in via the web interface or CLI did not work until an auto-commit was complete.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-159697"], "description": "Fixed an issue where, after rebooting the firewall, authenticating using LDAP credentials did not work.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,6 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-23-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.23 Addressed Issues", "version": "8.1.23", "skipped": 0, "issues": [
+  {"ids": ["PAN-190175", "PAN-190223"], "description": "A fix was made to address an OpenSSL infinite loop vulnerability in the PAN-OS software.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-177551"], "description": "A fix was made to address a vulnerability that enabled an authenticated network-based administrator to upload a specifically created configuration that disrupted system processes and was able to execute arbitrary code with root privileges when the configuration was committed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-162600"], "description": "Fixed an issue where, when the GlobalProtect client sent UDP/4501 traffic that was destined for the GlobalProtect gateway inside the GlobalProtect tunnel, the firewall still processed the traffic, which caused routing loops.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-158328"], "description": "Fixed an issue where the firewall stopped populating the multicast FIB table with OIL entries for multicast groups.", "workaround": null, "resolved_in": null}
+]}

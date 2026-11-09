@@ -1,0 +1,4 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-3-known-and-addressed-issues/pan-os-12-1-3-h3-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.3-h3 Addressed Issues", "version": "12.1.3-h3", "skipped": 1, "issues": [
+  {"ids": ["PAN-306534"], "description": "Fixed an issue were the all_task process repeatedly restarted due to memory pool corruption when processing fragmented DNS over HTTPs (DoH) JSON queries. This occurred due to incorrect buffer length calculations during memory deallocation when the query name field spanned multiple packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-305480"], "description": "Fixed an issue where the pan_task process stopped responding while processing DoH JSON format traffic with DoH Security enabled, which caused missing cross-packet bytes in the decoded DNS query type field, and the dataplane went down.", "workaround": null, "resolved_in": null}
+]}

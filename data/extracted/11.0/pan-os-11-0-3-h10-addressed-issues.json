@@ -1,0 +1,9 @@
+{"path": "pan-os/11-0/pan-os-release-notes/pan-os-11-0-3-known-and-addressed-issues/pan-os-11-0-3-h10-addressed-issues", "branch": "11.0", "kind": "addressed", "title": "PAN-OS 11.0.3-h10 Addressed Issues", "version": "11.0.3-h10", "skipped": 0, "issues": [
+  {"ids": ["PAN-252214"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246707"], "description": "Fixed an issue where failover was not triggered when multiple processes stopped responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244493"], "description": "Fixed a memory limitation with mapping subinterfaces to VPCE endpoints for GCP IPS, Amazon Web Services (AWS) integration with GWLB, and NSX service chain mapping.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240347"], "description": "Fixed an issue with the web interface where the Dashboard and a Device Group policy rule took longer than expected to load.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240166"], "description": "Fixed an issue where, when explicit proxy was configured on the firewall, websites loaded more slowly than expected or did not load due to DNS using TCP.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-239279"], "description": "Fixed an issue related to web proxy where the masterd process monitoring envoy process memory restarted when it reached an unexpected limit.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230746"], "description": "Fixed an issue on the web interface where device groups with a large number of managed firewalls displayed the Policy page more slowly than expected.", "workaround": null, "resolved_in": null}
+]}

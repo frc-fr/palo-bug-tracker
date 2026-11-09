@@ -1,0 +1,5 @@
+{"path": "pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-5-h3-addressed-issues", "branch": "9.0", "kind": "addressed", "title": "PAN-OS 9.0.5-h3 Addressed Issues", "version": "9.0.5-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-134242"], "description": "(PA-7000 Series (PA-7000b with SMC-B) firewalls with Log Forwarding Cards (LFC) only) Fixed an issue related to incorrect restrictions on communications to the LFC.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-114784"], "description": "Fixed an issue where a process (devsrvr) stopped responding after you pushed a configuration from Panorama™ to a firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-111333"], "description": "An enhancement was made to increase the pattern match limit to recognize applications and threats accurately.", "workaround": null, "resolved_in": null}
+]}

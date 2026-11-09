@@ -1,0 +1,13 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h10-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h10 Addressed Issues", "version": "10.2.10-h10", "skipped": 0, "issues": [
+  {"ids": ["PAN-268823"], "description": "Fixed an issue where Monitor > Log Display did not display all logs when you applied a filter.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268727"], "description": "Fixed an issue where traffic was dropped when the accumulation proxy was enabled and header insertion modified packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268314"], "description": "Fixed an issue where new files were not sent to WildFire. With this fix, the WildFire reserved drive space has been increased for greater session caching capability.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268002"], "description": "Fixed an issue where URL filtering response pages were not displayed for sites that were blocked as a result of SSL/TLS handshake inspection.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267704"], "description": "Fixed an issue where the firewall did not send an ICMP error packet to Envoy when the MSS was exceeded.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263973"], "description": "Fixed an issue where log collectors had a low incoming log rate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261673"], "description": "(VM-Series firewalls on Microsoft Azure environments only) Fixed an issue where, when Accelerated Networking was enabled, traffic was dropped because of the flow_parse_ip_hdr counter related to an Nvidia driver issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257601"], "description": "(PA-5450 firewalls only) Fixed an issue where Networking Cards (NC) experienced an internal link fault which caused path monitoring failure on the Dataplane Processing Card (DPC).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253213"], "description": "Fixed an issue where the firewall sent HIP notifications every time it received a HIP report instead of every two hours.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246699"], "description": "Fixed an issue on Panorama where Rule Usage and Apps Seen under Security policy rules stopped incrementing.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233195"], "description": "Fixed an issue where logs continued to be ingested when the vldmgr process was restarted.", "workaround": null, "resolved_in": null}
+]}

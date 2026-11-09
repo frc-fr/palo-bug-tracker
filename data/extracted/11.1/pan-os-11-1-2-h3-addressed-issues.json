@@ -1,0 +1,6 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-2-known-and-addressed-issues/pan-os-11-1-2-h3-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.2-h3 Addressed Issues", "version": "11.1.2-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-252214"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246949"], "description": "Fixed an issue where custom admin users were not able to click OK in the push scope selection window when device group or template were disabled under commit in the admin roles.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244013"], "description": "Fixed an issue on the Panorama web interface where, when a new content package was installed, new Anti-Spyware Signatures and new Vulnerability Signatures were not visible in their respective profiles.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-243951"], "description": "Fixed an issue on Panorama appliances in active/passive HA configurations where managed devices displayed as out-of-sync on the passive appliance when peer configuration changes were made to the SD-WAN configuration on the active peer.", "workaround": null, "resolved_in": null}
+]}

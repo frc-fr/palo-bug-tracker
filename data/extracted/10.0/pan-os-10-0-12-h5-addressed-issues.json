@@ -1,0 +1,6 @@
+{"path": "pan-os/10-0/pan-os-release-notes/pan-os-10-0-addressed-issues/pan-os-10-0-12-h5-addressed-issues", "branch": "10.0", "kind": "addressed", "title": "PAN-OS 10.0.12-h5 Addressed Issues", "version": "10.0.12-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-239241"], "description": "Extended the root certificate for WildFire appliances to December 31, 2032.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-237935"], "description": "Extended the offline PAN-DB, Panorama, and WildFire certificates which were previously set to expire on September 2, 2024.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-237876"], "description": "Extended the firewall Panorama root CA certificate which was previously set to expire on April 7th, 2024.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215576"], "description": "Fixed an issue where the userID-Agent and TS-Agent certificates were set to expire on November 18, 2024. With this fix, the expiration date has been extended to January 2032.", "workaround": null, "resolved_in": null}
+]}

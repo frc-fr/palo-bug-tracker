@@ -1,0 +1,14 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-2-known-and-addressed-issues/pan-os-11-1-2-h12-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.2-h12 Addressed Issues", "version": "11.1.2-h12", "skipped": 0, "issues": [
+  {"ids": ["PAN-264421"], "description": "Fixed an issue on Panorama where Push Scope did not populate automatically after changing the device group configuration.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263226"], "description": "Fixed an issue where decryption based traffic failed on Explicit Proxy nodes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262831"], "description": "(PA-5450 firewalls only) Fixed an intermittent issue where the all_task process stopped responding, which caused the firewall to restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262593"], "description": "Fixed an issue where traffic to websites failed on the Google Chrome web browser on Secure Web Gateway (SWG) nodes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261991"], "description": "Fixed an issue where traffic that did not match a decryption policy rule, or matched a no-decrypt policy rule, failed when accumulation proxy was enabled and a Zone Protection profile was configured with syn-cookies enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261917"], "description": "Fixed an issue where websites with a no-decrypt policy rule were decrypted in traffic log when using a Google Chrome browser with PQC enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259769"], "description": "Fixed an issue where the GlobalProtect portal was not accessible via a web browser and displayed the error ERR_EMPTY_RESPONSE.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-258736"], "description": "Fixed an issue where policy rule configurations pushed from Panorama were not reflected on the firewall if the rule had 63 characters.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253213"], "description": "Fixed an issue where the firewall sent HIP notifications every time it received a HIP report instead of every two hours.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-252300"], "description": "Fixed an issue where you were unable to select device groups in the push scope for user accounts.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-245690"], "description": "Fixed an issue where the Managed Collectors health status on Panorama displayed as empty.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-209574"], "description": "Fixed an issue with HTTP/2 traffic where downloading large files did not work when decryption was enabled.", "workaround": null, "resolved_in": null}
+]}

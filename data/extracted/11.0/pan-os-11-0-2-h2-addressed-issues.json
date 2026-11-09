@@ -1,0 +1,8 @@
+{"path": "pan-os/11-0/pan-os-release-notes/pan-os-11-0-2-known-and-addressed-issues/pan-os-11-0-2-h2-addressed-issues", "branch": "11.0", "kind": "addressed", "title": "PAN-OS 11.0.2-h2 Addressed Issues", "version": "11.0.2-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-230250"], "description": "Fixed an issue where selected applications serving partial content were dropped when Inline Cloud Analysis in Anti-Spyware was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-223787"], "description": "(PA-400 Series and PA-1400 Series firewalls only) Fixed an issue where commits failed with the error message Error unserializing profile objects failed to handle CONFIG_UPDATE_START.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222957"], "description": "Fixed an issue where managed firewalls did not reflect changes pushed by users that were not in a Superuser role.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-218107"], "description": "Fixed an issue with ciphers used for SSH tunnels where packet lengths were too large, which made the SSH tunnel unstable.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-214942"], "description": "Fixed an issue where SD-WAN traffic failed over to a non-member path after a flap of an SD-WAN virtual interface.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-204868"], "description": "Fixed an issue where disk utilization was continuously high due to the log purger not sufficiently reducing the utilization level.", "workaround": null, "resolved_in": null}
+]}

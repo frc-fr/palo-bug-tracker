@@ -1,0 +1,3 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h12-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h12 Addressed Issues", "version": "12.1.4-h12", "skipped": 1, "issues": [
+  {"ids": ["PAN-333108"], "description": "Fixed an issue where device telemetry uploads would fail, which led to critical alerts in the system logs. With this fix, telemetry data uploads complete successfully.", "workaround": null, "resolved_in": null}
+]}

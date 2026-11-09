@@ -1,0 +1,18 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-8-known-and-addressed-issues/pan-os-10-2-8-h4-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.8-h4 Addressed Issues", "version": "10.2.8-h4", "skipped": 0, "issues": [
+  {"ids": ["PAN-253317"], "description": "(VM-Series firewalls on Microsoft Azure environments only) Fixed an issue where you were unable to log in to the firewall after a private data reset.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251895"], "description": "Fixed an issue where enabling Inline Cloud Analysis features caused a slow packet buffer leak, which resulted in performance issues and dropped traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251563"], "description": "Added CPLD enhancement to capture external power issues.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251013"], "description": "Fixed an issue on the web interface where the Virtual Router and Virtual System configurations for the template incorrectly showed as none.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-250020"], "description": "Fixed an issue where MLC2 verdict retrieval failed due to a regression in loopback data flag handling.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248105"], "description": "Fixed an issue where the GlobalProtect SSL VPN tunnel immediately disconnected due to a keep-alive timeout.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246976"], "description": "Fixed an issue with unbalanced NAT session distribution with multi-dataplane firewalls when persistent-dipp was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244648"], "description": "Fixed an issue where, when FIPS was enabled in maintenance mode, the firewall rebooted and returned to maintenance mode.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244622"], "description": "Fixed an issue where FIB re-push did not work with Advanced Routing enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244548"], "description": "Fixed an issue where ECMP sessions changed destination MAC addresses mid-session, which caused connections to be reset.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242309"], "description": "Fixed an issue where a higher byte count (s2c) was observed for DNS-Base application.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240612"], "description": "Fixed a kernel panic caused by a third-party issue", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240308"], "description": "Fixed an issue where ElasticSearch did not work as expected when raid-mounts were not fully ready after a reboot.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-236133"], "description": "Fixed an issue where SSL traffic was impacted when SSL Command and Control detector or Incline Cloud Analysis was set to reset-both, reset-client, reset-server, or drop.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225394"], "description": "Fixed an issue on the firewall where SNMP incorrectly reported high packet descriptor usage.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-203981"], "description": "Fixed an issue where usernames with only numeric characters were not valid.", "workaround": null, "resolved_in": null}
+]}

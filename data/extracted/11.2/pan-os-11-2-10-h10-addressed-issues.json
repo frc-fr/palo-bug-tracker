@@ -1,0 +1,17 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-10-known-and-addressed-issues/pan-os-11-2-10-h10-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.10-h10 Addressed Issues", "version": "11.2.10-h10", "skipped": 0, "issues": [
+  {"ids": ["PAN-321150"], "description": "Fixed an issue where the interface remained down after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-320598"], "description": "Fixed an issue where internal and external DNS names did not resolve when connected to a GlobalProtect gateway.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-319266"], "description": "(Cloud IPS only) Increased scale limit for zone mappings.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-317755"], "description": "Fixed an issue on Panorama where selective push operations failed when plugin configurations included access-domain or log-collector references.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-315337"], "description": "Fixed an issue where GlobalProtect throughput was reduced after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-315314"], "description": "Fixed an issue where, when a push operation from Panorama to the firewall failed, accounting logs stopped forwarding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-314319"], "description": "Added a CLI command to enable and disable AHO software offload optimization.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-313828"], "description": "Fixed an issue where the firewall did not forward traffic due to memory issues on a forwarding component.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-313606"], "description": "Fixed an issue where Panorama pushed commits took longer than expected to complete without displaying an error message when committing due to slow cloud-app compilation.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-310263"], "description": "(VM-Series firewalls only) Fixed an issue where enabling TLS1.3 in a decryption profile prevented access to websites.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-310240"], "description": "Fixed an issue where software packet buffers were completely utilized when performing a Data Loss Prevention longevity test.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-307976"], "description": "(Firewalls in active/active HA configurations only) Fixed an issue where tunnels failed to come up with the error message failed to find a socket for transmission.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-307618"], "description": "Added a debug CLI command to address where remote networks for Prisma Access tenants randomly dropped monitoring packets from peer devices, which caused tunnels to be marked as down. This occurred when a CPU core suddenly experienced high utilization. To utilize this fix, run debug dataplane set ssl-decrypt use-new-peek-window yes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-292306"], "description": "Fixed an issue where the authd process stopped handling RADIUS authentication requests and required a restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-234302"], "description": "Fixed an issue where commit operations took longer than expected to complete due to EDL timeouts occurring on passive nodes when a service route was enabled.", "workaround": null, "resolved_in": null}
+]}

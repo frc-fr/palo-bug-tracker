@@ -1,0 +1,125 @@
+{
+  "source": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary",
+  "branches": {
+    "12.2": {
+      "released": "2026-07-30",
+      "support": "2029-07-30",
+      "extended": "2030-07-30"
+    },
+    "12.1": {
+      "released": "2025-08-28",
+      "support": "2028-08-28",
+      "extended": "2029-08-28"
+    },
+    "11.2": {
+      "released": "2024-05-02",
+      "support": "2027-05-02",
+      "extended": "2027-08-31"
+    },
+    "11.1": {
+      "released": "2023-11-03",
+      "support": "2027-05-03",
+      "extended": "2027-08-31"
+    },
+    "11.0": {
+      "released": "2022-11-17",
+      "support": "2024-11-17",
+      "extended": null
+    },
+    "10.2": {
+      "released": "2022-02-27",
+      "support": "2025-08-27",
+      "extended": "2027-03-31"
+    },
+    "10.1": {
+      "released": "2021-05-31",
+      "support": "2024-12-01",
+      "extended": "2026-03-31"
+    },
+    "10.0": {
+      "released": "2020-07-16",
+      "support": "2022-07-16",
+      "extended": null
+    },
+    "9.1": {
+      "released": "2019-12-13",
+      "support": "2024-06-30",
+      "extended": null
+    },
+    "9.0": {
+      "released": "2019-02-06",
+      "support": "2022-03-01",
+      "extended": null
+    },
+    "8.1": {
+      "released": "2018-03-01",
+      "support": "2022-03-01",
+      "extended": null
+    },
+    "8.0": {
+      "released": "2017-01-29",
+      "support": "2019-10-31",
+      "extended": null
+    },
+    "7.1": {
+      "released": "2016-03-29",
+      "support": "2020-06-30",
+      "extended": null
+    },
+    "7.0": {
+      "released": "2015-06-04",
+      "support": "2017-12-04",
+      "extended": null
+    },
+    "6.1": {
+      "released": "2014-10-25",
+      "support": "2018-10-25",
+      "extended": null
+    },
+    "6.0": {
+      "released": "2014-01-19",
+      "support": "2017-03-19",
+      "extended": null
+    },
+    "5.0": {
+      "released": "2012-11-13",
+      "support": "2016-11-13",
+      "extended": null
+    },
+    "4.1": {
+      "released": "2011-10-31",
+      "support": "2015-04-30",
+      "extended": null
+    },
+    "4.0": {
+      "released": "2011-02-22",
+      "support": "2014-12-31",
+      "extended": null
+    },
+    "3.1": {
+      "released": "2010-03-15",
+      "support": "2013-06-30",
+      "extended": null
+    },
+    "3.0": {
+      "released": "2009-06-17",
+      "support": "2010-12-17",
+      "extended": null
+    },
+    "2.1": {
+      "released": "2009-01-05",
+      "support": "2012-01-05",
+      "extended": null
+    },
+    "2.0": {
+      "released": "2008-05-20",
+      "support": "2009-05-20",
+      "extended": null
+    },
+    "1.3": {
+      "released": "2007-11-15",
+      "support": "2008-11-20",
+      "extended": null
+    }
+  }
+}

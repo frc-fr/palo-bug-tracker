@@ -1,0 +1,6 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-7-known-and-addressed-issues/pan-os-12-1-7-h1-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.7-h1 Addressed Issues", "version": "12.1.7-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-320598"], "description": "Fixed an issue where internal and external DNS names did not resolve when connected to a GlobalProtect gateway.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-317755"], "description": "Fixed an issue on Panorama where selective push operations failed when plugin configurations included access-domain or log-collector references.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-317133"], "description": "Fixed an issue where you were unable to generate a ticket for the GlobalProtect portal.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-302150"], "description": "(Panorama appliances only) Fixed an issue where you were unable to successfully configure log collector groups due to the master node settings not populating automatically.", "workaround": null, "resolved_in": null}
+]}

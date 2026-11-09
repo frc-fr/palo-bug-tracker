@@ -1,0 +1,6 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-4-known-and-addressed-issues/pan-os-11-2-4-h2-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.4-h2 Addressed Issues", "version": "11.2.4-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-273215"], "description": "Fixed an issue where a syntax error in the index generation script caused a high management plane CPU load after upgrading.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-271613"], "description": "Fixed an issue where configuration pushes from Panorama to the firewall failed due to an OOXML commit error.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-269404"], "description": "Fixed an issue where the firewall did not reset the maximum latency timer for hold mode.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259078"], "description": "Fixed an issue where WildFire Analysis reports were not generated and the following error message was displayed: Error 500: Internal Server Error.", "workaround": null, "resolved_in": null}
+]}

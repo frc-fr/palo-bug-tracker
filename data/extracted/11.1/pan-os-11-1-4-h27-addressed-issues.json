@@ -1,0 +1,11 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-4-known-and-addressed-issues/pan-os-11-1-4-h27-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.4-h27 Addressed Issues", "version": "11.1.4-h27", "skipped": 0, "issues": [
+  {"ids": ["PAN-301801"], "description": "Fixed an issue on Log Collectors where the Elasticsearch process fluctuated intermittently between green and red states, which led to interruptions in log collection. This issue occurred when the number of shards exceeded the cluster's maximum supported threshold of greater than 1000 shards per Elasticsearch instance.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-292159", "PAN-271216"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-291661"], "description": "Fixed an issue on Panorama appliances and Log Collectors where, after an upgrade, Elasticsearch intermittently entered into a Red state before automatically recovering.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-286164"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-282093"], "description": "Enhanced the CLI command request legacy reset to delete the legacy certificate files that were being used to connect with the secondary Panorama appliance.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-278296"], "description": "Fixed an issue where the system MAC address of the aggregate interface was the same on the active firewall and the passive firewall after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-272539"], "description": "(Panorama appliances on Microsoft Azure environments only) Fixed an issue where user to IP address mapping was missing for some users connected to specific Prisma Access gateways, which caused the collection layer Azure firewall to not form the mapping.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-271221"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251715"], "description": "Fixed an issue where the firewall closed the SSL connection to the user ID agent.", "workaround": null, "resolved_in": null}
+]}

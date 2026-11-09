@@ -1,0 +1,19 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-8-known-and-addressed-issues/pan-os-10-2-8-h18-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.8-h18 Addressed Issues", "version": "10.2.8-h18", "skipped": 0, "issues": [
+  {"ids": ["PAN-273215"], "description": "Fixed an issue where a syntax error in the index generation script caused a high management plane CPU load after upgrading.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-272809"], "description": "A fix was made to address (PAN-SA-2024-0015) and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-269624"], "description": "Fixed an issue where GlobalProtect clients failed to connect with the error message The device or feature requires a GlobalProtect subscription license.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268909"], "description": "Fixed an issue where IP address tags were removed from firewalls after a management server or useridd process restart. This occurred when a Panorama serial-number based configuration was used for User-ID redistribution.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264249"], "description": "Fixed an issue on the firewall where SNMP queries timed out when using SNMP.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263973"], "description": "Fixed an issue where log collectors had a low incoming log rate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261673"], "description": "(VM-Series firewalls on Microsoft Azure environments only) Fixed an issue where, when Accelerated Networking was enabled, traffic was dropped because of the flow_parse_ip_hdr counter related to an Nvidia driver issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257601"], "description": "(PA-5450 firewalls only) Fixed an issue where Networking Cards (NC) experienced an internal link fault which caused path monitoring failure on the Dataplane Processing Card (DPC).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-252974"], "description": "(PA-450 firewalls only) Fixed an issue where specific routes were not advertised when BGP Aggregate was configured with the advertise filter.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246699"], "description": "Fixed an issue on Panorama where Rule Usage and Apps Seen under Security policy rules stopped incrementing.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246420"], "description": "(PA-5450 Series firewalls only) Fixed an issue where the firewall rebooted unexpectedly during an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244950", "PAN-221352"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240251"], "description": "Fixed an issue where the vldmgr process incorrectly restarted during an Elasticsearch restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230825"], "description": "Fixed an issue where link flaps occurred on Panorama appliances in high availability (HA) configurations.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-228515"], "description": "Fixed an issue where the Elasticsearch cluster health status displayed as yellow or red due to Elasticsearch SSH tunnel flaps.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222579"], "description": "Fixed an issue where the useridd and distd process restarted, which resulted in missing mappings.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216941"], "description": "(Panorama appliances in Log Collector mode only) Fixed an issue where Panorama stopped processing and saving logs.", "workaround": null, "resolved_in": null}
+]}

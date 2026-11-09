@@ -1,0 +1,4 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-11-known-and-addressed-issues/pan-os-10-2-11-h3-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.11-h3 Addressed Issues", "version": "10.2.11-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-264680"], "description": "(PA-220 firewalls only) Fixed an issue where Device > Setup was not displayed on the web interface.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262340"], "description": "Fixed an issue where FQDN resolution failed for address objects, and all FQDN traffic was denied by the interzone-default policy rule.", "workaround": null, "resolved_in": null}
+]}

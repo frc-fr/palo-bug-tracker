@@ -1,0 +1,7 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-22-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.22 Addressed Issues", "version": "8.1.22", "skipped": 0, "issues": [
+  {"ids": ["PAN-176097"], "description": "Fixed an issue in an active/active HA configuration where the V-wire interface on the active primary firewall forwarded the ICMP error code packet that was received by the active secondary firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-174709"], "description": "Fixed an out-of-memory condition that occurred due to multiple parallel jobs being created by the scheduled log export feature.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-172243"], "description": "Fixed an issue where NetFlow traffic triggered a packet buffer leak.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-161496"], "description": "Fixed an issue when calculating the incremental checksum after a post-NAT translation where the arguments to pan_in_cksm32_diff overflowed the 32-bit integer.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-136007"], "description": "Fixed an issue where generating subordinate ECDSA Certificate Authority (CA) certificates from the web interface failed if the Common Name field contained a space.", "workaround": null, "resolved_in": null}
+]}

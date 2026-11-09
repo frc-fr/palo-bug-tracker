@@ -1,0 +1,11 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-2-known-and-addressed-issues/pan-os-11-1-2-h14-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.2-h14 Addressed Issues", "version": "11.1.2-h14", "skipped": 0, "issues": [
+  {"ids": ["PAN-262287"], "description": "Fixed an issue where dereferencing a NULL pointer that occurred caused pan_task processes to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261673"], "description": "(VM-Series firewalls on Microsoft Azure environments only) Fixed an issue where, when Accelerated Networking was enabled, traffic was dropped because of the flow_parse_ip_hdr counter related to an Nvidia driver issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259151"], "description": "Fixed an issue where unused objects were pushed to the firewall, which caused configuration pushes to fail with the error Number of address groups exceed platform capacity.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259002"], "description": "Fixed an issue where frequent external dynamic list updates caused the configd process to restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257601"], "description": "(PA-5450 firewalls only) Fixed an issue where Networking Cards (NC) experienced an internal link fault which caused path monitoring failure on the Dataplane Processing Card (DPC).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257327"], "description": "Fixed an issue where a failover event occurred unexpectedly on the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253626"], "description": "Fixed an issue on Panorama where unused objects were pushed to the firewall, which caused the push operations to intermittently fail.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-236191"], "description": "Fixed an issue where the web interface performance was slower than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222542"], "description": "(PA-7000 Series firewalls only) Fixed an issue where Log Forward Cards (LFC) were incorrectly identified as distribution policies, which caused packet loss due to traffic, BFD, and other control packets being forwarded to the LFC.", "workaround": null, "resolved_in": null}
+]}

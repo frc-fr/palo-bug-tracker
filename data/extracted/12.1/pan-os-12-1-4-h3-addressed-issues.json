@@ -1,0 +1,5 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h3-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h3 Addressed Issues", "version": "12.1.4-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-313572"], "description": "(VM-Series firewalls only) Fixed an issue where the dataplane restarted due to a segmentation fault.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-300664"], "description": "Fixed an issue on the Panorama and firewall web interface where Applications pages became unresponsive after activating the SaaS Inline license.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-292447"], "description": "Fixed an issue where Panorama did not display data in the Feature Adoption tab in Strata Cloud Manager due to the system creating and deleting a CLI user for each interval instead of reusing a permanent CLI user for telemetry.", "workaround": null, "resolved_in": null}
+]}

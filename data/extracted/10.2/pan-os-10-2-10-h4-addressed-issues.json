@@ -1,0 +1,22 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h4-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h4 Addressed Issues", "version": "10.2.10-h4", "skipped": 0, "issues": [
+  {"ids": ["PAN-263226"], "description": "Fixed an issue where decryption based traffic failed on Explicit Proxy nodes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263164"], "description": "Fixes a problem where Netflow User ID information was truncated to 31 characters.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262287"], "description": "Fixed an issue where dereferencing a NULL pointer that occurs might cause pan_task processes to crash.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261917"], "description": "Fixed an issue where websites with a no-decrypt policy rule were decrypted in traffic log when using a Google Chrome browser with PQC enabled", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261797"], "description": "(Firewalls and Panorama appliances in FIPS-CC mode only) Fixed an issue where the authd process restarted if RADIUS PAP/CHAP authentication was used.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261270"], "description": "Fixed an issue where the firewall decremented the TTL/Hop limit for BGPv6 packets by 1 after IPSec decryption.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260662"], "description": "Fixed an issue where large file downloads were slower than expected when private IP address visibility was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-258442"], "description": "Fixed an issue where changes made to the split tunnel configuration on the Prisma Access gateway were not reflected on the GlobalProtect client.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257957"], "description": "(Firewalls and Panorama appliances in FIPS-CC mode only) Fixed an issue where the authd process restarted if RADIUS PAP/CHAP authentication was used.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257563"], "description": "Fixed an issue where the logrcvr component for SASE and MCW displayed incorrect zones in the traffic flow.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-256223"], "description": "Fixed an issue where device telemetry log collection filled the root partition.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255619"], "description": "Fixed an intermittent issue where file downloads from websites failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-254826"], "description": "Fixed an issue where the firewall stopped responding when processing traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-254671"], "description": "Fixed an issue where excessive Timed out while getting config lock error messages were generated when making bulk changes via XML API.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-250371"], "description": "Fixed an issue where the logrcvr process stopped responding, which caused commits to fail with the error message Management server failed to send phase 1 to client logrcvr.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247257"], "description": "Fixed an issue where the useridd process stopped responding, which caused the firewall to reboot.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242958"], "description": "Fixed an issue where the firewall intermittently logged connect-agent-failure messages for service connection instances due to bi-directional host ID redistribution.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242331"], "description": "Fixed an issue where Prisma Access remote network firewalls intermittently created incorrect user-to-IP-address mappings.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240990"], "description": "Fixed an issue where l3svc.py displayed incorrect logs.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-218873"], "description": "Fixed an issue where a HIP mask was reused when an existing IP address user mapping was updated by a new IP address user mapping that had a different username but the same IP address.", "workaround": null, "resolved_in": null}
+]}

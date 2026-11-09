@@ -1,0 +1,5 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h5-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h5 Addressed Issues", "version": "12.1.4-h5", "skipped": 1, "issues": [
+  {"ids": ["PAN-316911"], "description": "(VM-Series firewalls on Amazon Web Services (AWS) environments only) Fixed an issue where a newly bootstrapped firewall required a management server restart, relicensing, or license push from Panorama to invoke the device certificate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-308507"], "description": "(Panorama managed firewalls only) Fixed an issue where the firewall intermittently failed to maintain active log forwarding streams to Strata Logging Service (SLS) even when duplicate logging and enhanced application logging were enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-304576"], "description": "Fixed an issue where the firewall entered a non-functional state due to segmentation fault within the all_pktproc process that was caused by a session that involved http2 cleartext traffic.", "workaround": null, "resolved_in": null}
+]}

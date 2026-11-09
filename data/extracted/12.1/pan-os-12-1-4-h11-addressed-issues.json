@@ -1,0 +1,3 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h11-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h11 Addressed Issues", "version": "12.1.4-h11", "skipped": 0, "issues": [
+  {"ids": ["PAN-337297"], "description": "Fixed an issue where new GlobalProtect App users could not obtain portal configuration after successful authentication. With this fix, GlobalProtect App users successfully receive portal configurations.", "workaround": null, "resolved_in": null}
+]}

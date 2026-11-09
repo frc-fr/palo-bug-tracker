@@ -1,0 +1,18 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h6-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h6 Addressed Issues", "version": "10.2.7-h6", "skipped": 0, "issues": [
+  {"ids": ["PAN-246431"], "description": "Fixed an issue where a Push to Device operation remained at the state None when performing a selective push to device groups and templates that included both connected and disconnected firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242910"], "description": "Fixed an issue where a custom based non Superuser was unable to push to firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242627"], "description": "Fixed an issue where selective push did not work.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242561"], "description": "Fixed an issue where GlobalProtect tunnels disconnected shortly after being established when SSL was used as the transfer protocol.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242027"], "description": "Fixed an issue where the all-task process repeatedly restarted during memory allocation failures.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-239367"], "description": "Fixed an issue on the firewall where a memory leak associated with the logrcvr process occurred.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-238643"], "description": "Fixed an issue where a memory leak caused multiple processes to stop responding when VM Information Sources was configured.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-237208"], "description": "Fixed an issue where the reportd process stopped and the firewall rebooted.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-235840"], "description": "Fixed an issue where, after a configuration push from Panorama to managed firewalls, the status displayed as None and the push took longer than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233789"], "description": "Fixed an issue with commit and push and push operations where the user was not correctly bound to the scope, which caused all device groups to be selected for a selective push.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-231148"], "description": "Fixed an issue where no DHCP option list was defined when using GlobalProtect.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-229090"], "description": "Fixed an issue where the logrcvr process stopped responding during memory allocation failures.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-228515"], "description": "Fixed an issue where the Elasticsearch cluster health status displayed as yellow or red due to Elasticsearch SSH tunnel flaps.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-223259"], "description": "Fixed an issue where selective pushes failed with the error message Failed to generate selective push configuration. Unable to retrieve last in-sync configuration for the device, either a push was never done or version is too old. Please try a full push.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-217293"], "description": "Fixed a rare issue where URLs were not accessible when the header length was greater than 16,000 over HTTP/2.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-199070"], "description": "Fixed an issue where the all_task and pan_task processes stopped responding, which impacted traffic.", "workaround": null, "resolved_in": null}
+]}

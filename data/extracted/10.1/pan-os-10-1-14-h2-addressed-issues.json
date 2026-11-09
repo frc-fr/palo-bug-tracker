@@ -1,0 +1,8 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h2-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.14-h2 Addressed Issues", "version": "10.1.14-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-258702"], "description": "(WF-500 appliances only) Fixed an issue where the varrcvr process stopped responding when files were being forwarded to the WildFire cloud.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257197"], "description": "Fixed an issue where ifType and ifSpeed were not populated in asynchronous mode of SNMP operations.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251847"], "description": "Fixed an issue on log collectors where the incoming log rate was lower than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255163"], "description": "(CN-Series firewalls only) Fixed an issue where the system database key that stored the configuration status of the dataplane pod was not updated frequently.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248130"], "description": "Fixed an issue where the AND operation under a Dynamic Address Group comparison did not work after upgrading the AWS plugin to 3.0.1.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247257"], "description": "Fixed an issue where the useridd process stopped responding, which caused the firewall to reboot.", "workaround": null, "resolved_in": null}
+]}

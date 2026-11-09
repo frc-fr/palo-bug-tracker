@@ -1,0 +1,6 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-6-known-and-addressed-issues/pan-os-11-1-6-h36-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.6-h36 Addressed Issues", "version": "11.1.6-h36", "skipped": 0, "issues": [
+  {"ids": ["PAN-323501"], "description": "Fixed an issue where SWG Explicit Proxy Kerberos authentication bypass did not occur for some URLs that matched a configured URL category.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-314776"], "description": "Fixed an issue where the configd process stopped responding after pushing configuration changes from Panorama to the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-312618"], "description": "Fixed an issue where the firewall was unable to activate GlobalProtect client software and displayed SW LIMIT messages related to max-profiles and unsupported major and minor versions in the downgrade list, which prevented successful software installation.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-307933"], "description": "(Panorama appliances in Log Collector mode only) Fixed an issue where the log collectors became unstable for an extended period of time when receiving large amounts of traffic.", "workaround": null, "resolved_in": null}
+]}

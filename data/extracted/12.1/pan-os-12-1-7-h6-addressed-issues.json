@@ -1,0 +1,4 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-7-known-and-addressed-issues/pan-os-12-1-7-h6-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.7-h6 Addressed Issues", "version": "12.1.7-h6", "skipped": 0, "issues": [
+  {"ids": ["PAN-337297"], "description": "Fixed an issue where new GlobalProtect App users could not obtain portal configuration after successful authentication. With this fix, GlobalProtect App users successfully receive portal configurations.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-334871"], "description": "Fixed an issue where DHCPv6 relay failed on sub-interfaces when the Advanced Routing Engine was in use with DHCP IPv4 and IPv6 enabled.", "workaround": null, "resolved_in": null}
+]}

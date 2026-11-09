@@ -1,0 +1,6 @@
+{"path": "pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-3-h3-addressed-issues", "branch": "9.0", "kind": "addressed", "title": "PAN-OS 9.0.3-h3 Addressed Issues", "version": "9.0.3-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-123700"], "description": "A security-related fix was made to prevent a memory corruption vulnerability in PAN-OS® software (PAN-SA-2019-0023 /.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-123603"], "description": "A security-related fix was made to prevent a memory corruption vulnerability in PAN-OS software (PAN-SA-2019-0021 /.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-123564"], "description": "Fixed, see PAN-SA-2019-0022 for details.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-121814"], "description": "Fixed an issue where the threat log incorrectly displayed informational severity-level threats with high severity level.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,11 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h4-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.14-h4 Addressed Issues", "version": "10.1.14-h4", "skipped": 0, "issues": [
+  {"ids": ["PAN-259480"], "description": "Fixed an issue where the varrcvr process stopped responding after running out of memory due to how the process queued and dequeued files for WildFire file forwarding when a WildFire Analysis Security profile was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257957"], "description": "(Firewalls and Panorama appliances in FIPS-CC mode only) Fixed an issue where the authd process restarted if RADIUS PAP/CHAP authentication was used.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-256136"], "description": "Fixed an issue where traffic logs were not forwarded to an external system log server.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259480"], "description": "Fixed an issue where the varrcvr process stopped responding after running out of memory due to how the process queued and dequeued files for WildFire file forwarding when a WildFire Analysis Security profile was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257462"], "description": "Fixed an issue related to the varrcvr process where the management plane CPU was higher than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-254373"], "description": "Fixed an issue where the firewall did not handle error code 500 responses from the WildFire cloud correctly.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233129"], "description": "Fixed an issue where the firewall sent duplicate logs to syslog server when the log forwarding profile was configured with Shared enabled and was used in a Security policy rule.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-226769"], "description": "Fixed an issue where ElasticSearch used more memory than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216368"], "description": "Fixed an issue where the configuration commit process on chassis based platforms did not recognize load failures on the dataplane.", "workaround": null, "resolved_in": null}
+]}

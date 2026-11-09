@@ -1,0 +1,6 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-11-known-and-addressed-issues/pan-os-10-2-11-h2-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.11-h2 Addressed Issues", "version": "10.2.11-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-265438"], "description": "Fixed an issue where the firewall did not update the Nicafe firmware from 2.110 to 2.111.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-265336"], "description": "Fixed an issue where the copper ports flapped when generating a technical support file, executing telemetry, or retrieving port status using a Management Data Input/Output (MDIO) read.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264871"], "description": "Fixed an issue on Panorama where the configd process stopped responding when viewing IP addresses on dynamic address groups with a large number of IP addresses.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260512"], "description": "Fixed an issue where accessing the IP address of the device address group objects from the user interface caused the configd process to stop responding.", "workaround": null, "resolved_in": null}
+]}

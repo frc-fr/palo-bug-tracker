@@ -1,0 +1,4 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-14-h2-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.14-h2 Addressed Issues", "version": "8.1.14-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-144251"], "description": "(PAN-OS 8.1.14 only) (PA-7000 Series firewalls only) Fixed an issue where SSL decryption failed due to memory allocation failure.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-142249"], "description": "Fixed an issue where WildFire submission reports could not be viewed when the firewall was using the public WildFire cloud.", "workaround": null, "resolved_in": null}
+]}

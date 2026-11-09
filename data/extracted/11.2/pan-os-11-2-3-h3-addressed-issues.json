@@ -1,0 +1,5 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-3-known-and-addressed-issues/pan-os-11-2-3-h3-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.3-h3 Addressed Issues", "version": "11.2.3-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address (PAN-SA-2024-0015) and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247230"], "description": "Fixed an issue where the syslog forwarding configuration did not include the full path for Security policy rules.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259997"], "description": "(PA-3410, PA-3420, and PA-3430 firewalls only) Fixed an issue where the install failed when upgrading from PAN-OS 10.2.3-h3 and later 10.2 releases to PAN-OS 10.2.10 due to the number of configured vsys zones exceeding the zone limit in PAN-OS 10.2.10.", "workaround": null, "resolved_in": null}
+]}

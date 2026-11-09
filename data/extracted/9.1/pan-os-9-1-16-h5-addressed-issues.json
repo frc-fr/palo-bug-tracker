@@ -1,0 +1,4 @@
+{"path": "pan-os/9-1/pan-os-release-notes/pan-os-9-1-addressed-issues/pan-os-9-1-16-h5-addressed-issues", "branch": "9.1", "kind": "addressed", "title": "PAN-OS 9.1.16-h5 Addressed Issues", "version": "9.1.16-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-237935"], "description": "Extended the offline PAN-DB, Panorama, and WildFire certificates which were previously set to expire on September 2, 2024.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215576"], "description": "Fixed an issue where the userID-Agent and TS-Agent certificates were set to expire on November 18, 2024. With this fix, the expiration date has been extended to January 2032.", "workaround": null, "resolved_in": null}
+]}

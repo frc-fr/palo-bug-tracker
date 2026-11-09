@@ -1,0 +1,17 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-11-known-and-addressed-issues/pan-os-10-1-11-h1-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.11-h1 Addressed Issues", "version": "10.1.11-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-235726"], "description": "Fixed an issue on the web interface where a pop up window did not show a success message or close after a license was successfully upgraded or deactivated.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-234962"], "description": "Fixed an issue on Panorama that caused commit operations to be slower than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233954"], "description": "Fixed an issue where the firewall was unable to retrieve correct groups from the LDAP server.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233974"], "description": "Fixed an issue where LACP interfaces went down after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-232059"], "description": "Fixed an issue with memory management when processing large certificates using TLSv1.3.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-231291"], "description": "Fixed an issue where SD-WAN Adaptive SaaS path monitor went down after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230039"], "description": "Fixed an issue where migrating from an Enterprise License Agreement (ELA) to a Flexible VM-Series License failed with a deactivation error message.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-227376"], "description": "Fixed an issue where a memory overrun caused the all_task process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-224060"], "description": "(PA-220 Series firewalls only) Fixed an issue where multiple dataplane processes stopped responding after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-221190"], "description": "(PA-800 Series firewalls only) Fixed an issue where the firewall rebooted due to I2C errors when unsupported optics were inserted in ports 5-8.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-220659"], "description": "Fixed an issue on the firewall where scheduled Antivirus updates failed when external dynamic lists were configured on the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-218057"], "description": "(PA-7000 Series firewalls only) Fixed an issue where internal path monitoring failed due to a heartbeat miss.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-208567"], "description": "Fixed an issue with email formatting where, when a scheduled email contained two or more attachments, only one attachment was visible.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-204868"], "description": "Fixed an issue where disk utilization was continuously high due to the log purger not sufficiently reducing the utilization level.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-161373"], "description": "Fixed an issue where the SYN action field did not change as expected and the value was set to SYN cookie.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,13 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-11-known-and-addressed-issues/pan-os-10-2-11-h9-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.11-h9 Addressed Issues", "version": "10.2.11-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-273215"], "description": "Fixed an issue where a syntax error in the index generation script caused a high management plane CPU load after upgrading.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268823"], "description": "Fixed an issue where Monitor > Log Display did not display all logs when you applied a filter.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268339"], "description": "Fixed an issue where syslog-ng failed to start due to the syslog-ng.config file being corrupted when upgrading from PAN-OS 10.2.9-h1 to PAN-OS 10.2.11.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264249"], "description": "Fixed an issue on the firewall where SNMP queries timed out when using SNMP.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263973"], "description": "Fixed an issue where log collectors had a low incoming log rate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263287"], "description": "The PAN-COMMON-MIB.my file was updated to support new object identifiers (OID) to poll interface use via SNMP with table identifiers.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261332"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259910"], "description": "Fixed an issue where the firewall reported the same value over consecutive SNMP polls when asynchronous mode was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257601"], "description": "(PA-5450 firewalls only) Fixed an issue where Networking Cards (NC) experienced an internal link fault which caused path monitoring failure on the Dataplane Processing Card (DPC).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246699"], "description": "Fixed an issue on Panorama where Rule Usage and Apps Seen under Security policy rules stopped incrementing.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225213"], "description": "Fixed an issue where Push All Changes displayed changes that were already committed in the push scope for another device group after performing a selective commit and selective push to the first device group.", "workaround": null, "resolved_in": null}
+]}

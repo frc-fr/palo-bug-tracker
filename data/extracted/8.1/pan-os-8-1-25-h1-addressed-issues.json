@@ -1,0 +1,4 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-25-h1-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.25-h1 Addressed Issues", "version": "8.1.25-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-202450"], "description": "Fixed an issue where the device-client-cert was set to expire on December 31, 2023. With this fix, the expiration date has been extended.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-198372"], "description": "Fixed an issue where the root-cert was set to expire on December 31, 2023. With this fix, the expiration date has been extended.", "workaround": null, "resolved_in": null}
+]}

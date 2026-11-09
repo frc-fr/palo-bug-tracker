@@ -1,0 +1,8 @@
+{"path": "cn-series/release-notes/cn-series-11-x-release-notes/known-issues-in-cn-series-11-x", "branch": "11.x", "kind": "known", "title": "Known Issues in CN-Series 11.x", "version": null, "skipped": 0, "issues": [
+  {"ids": ["PAN-211651"], "description": "In Openshift PCI devices with no iommu support for VFIO, the DPDK fails to unbind until all processes have stopped using the PCI devices.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-211651"], "description": "Comm crash is observed in CN-DB, CN-GW, CN-MGMT pods during a CN-MGMT failover.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-200440"], "description": "CN-NGFWs and CN-MGMTs fail to establish connection on some Openshift environments due to some conditions listed in Openshift bug.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192676"], "description": "In Open shift environments, it is observed that ping packets from CN-GW pods to/from external environments are dropped.", "workaround": null, "resolved_in": null},
+  {"ids": ["CN-177"], "description": "The inbound traffic to secured applications fails to work with PAN-CNI 3.0.3 and 3.0.4 for Azure Kubernetes Service (AKS).", "workaround": "Use PAN-CNI 3.0.2 for AKS to deploy the CN-Series firewall successfully.", "resolved_in": null},
+  {"ids": ["PLUG-17100"], "description": "When onboarding an OpenShift 4.15 cluster, the cluster validation fails with an SSL certificate error.", "workaround": "If the Kubernetes plugin cannot connect to the Kubernetes API server, use IP address instead of DNS name in the API server configuration setup.", "resolved_in": null}
+]}

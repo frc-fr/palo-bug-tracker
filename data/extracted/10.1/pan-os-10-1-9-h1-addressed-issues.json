@@ -1,0 +1,13 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-9-known-and-addressed-issues/pan-os-10-1-9-h1-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.9-h1 Addressed Issues", "version": "10.1.9-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-213661"], "description": "Fixed an issue where memory allocation failure caused dataplane processes to restart. This issue occurred when decryption was enabled and the device is under heavy L7 usage.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-211242"], "description": "Fixed an issue where missed heartbeats caused the Data Processing Card (DPC) and its corresponding Network Processing Card (NPC) to restart due to internal packet path monitoring failure.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-210327"], "description": "(PA-5200 Series firewalls only) Fixed an issue where upgrading to PAN-OS 10.1.7, an internal loop caused an increase in the packets received per second.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-209069"], "description": "Fixed an issue where IP addresses in the X-Forwarded-For (XFF) field were not logged when the IP address contained an associated port number.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-209021"], "description": "Fixed an issue where packets were fragmented when SD-WAN VPN tunnel was configured on aggregate ethernet interfaces and sub-interfaces.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-208987"], "description": "(PA-5400 Series only) Fixed an issue where packets were not transmitted from the firewall if its fragments were received on different slots. This occurred when aggregate ethernet (AE) members in an AE interface were placed on a different slot.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-207740"], "description": "Fixed an issue that resulted in a race condition, which caused the configd process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-207400"], "description": "Fixed an issue on Octeon based dplatforms where fragmented VLAN tagged packets dropped on an aggregate interface.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-205255"], "description": "Fixed a rare issue that caused the dataplane to restart unexpectedly.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-203137"], "description": "(PA-5450 firewalls only) Fixed an issue where HSCI ports did not come up when QSFP DAC cables were used.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-186412"], "description": "Fixed an issue where invalid packet-ptr was seen in work entries.", "workaround": null, "resolved_in": null}
+]}

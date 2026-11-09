@@ -1,0 +1,22 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-6-known-and-addressed-issues/pan-os-10-1-6-h6-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.6-h6 Addressed Issues", "version": "10.1.6-h6", "skipped": 0, "issues": [
+  {"ids": ["PAN-196993"], "description": "Fixed an issue where an incorrect regex key was generated to invalidate the completions cache, which caused the configd process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-195181"], "description": "Added enhancements to improve the load on the pan_comm process during SNMP polling.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194826"], "description": "(WF-500 and WF-500-B appliances only) Fixed an issue where log system forwarding did not work over a TLS connection.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194776"], "description": "Fixed an issue on Amazon Web Services (AWS) Gateway Load Balancer (GWLB) deployments with overlay routing enabled where intra-zone packets were re-encapsulated with the incorrect source/destination MAC address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194721"], "description": "Fixed an issue where path monitor failure occurred, which caused slots to go down.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194694"], "description": "Fixed an issue where multiple SNMP requests being made to the firewall caused in the pan_comm process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194645"], "description": "(PA-5400 Series firewalls only) Fixed an issue where the Data Processing Card status was incorrectly shown as config=None", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194601"], "description": "Fixed an issue that caused the all_task process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194406"], "description": "Fixed an issue where the MTU from SD-WAN interfaces was recalculated after a configuration push from Panorama or a local commit, which caused traffic disruption.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194097"], "description": "Fixed an issue on firewalls in high availability (HA) active/passive configurations where _ha_d_session_msgbuf overflowed on the passive firewall during an upgrade, which caused the firewall to enter a non-functional state.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-193732"], "description": "(PA-5400 Series firewalls only) Fixed an issue where the firewall incorrectly handled internal transactions.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-193184"], "description": "Fixed an issue where IP-user-mapping disappeared when login/logout events occurred at the same timestamp.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-193132"], "description": "(PA-220 firewalls only) Fixed an issue where a commit and push from Panorama caused high dataplane CPU utilization.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192999"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192758"], "description": "(PA-7000 Series firewalls only) Fixed an issue where files failed to upload to the Wildfire public cloud.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192673"], "description": "(PA-7050-SMC-B firewalls only) Fixed an issue where the LFC (log forwarding card) syslog-ng service failed to start after an upgrade.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192551"], "description": "(PA-5400 Series firewalls only) Fixed an issue where the firewall incorrectly processed path monitoring packets, which caused a slot restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192052"], "description": "Fixed an issue where, when next hop MAC address entries weren't found on the offload processor for active traffic, update messages flooded the firewall, which caused resource contention and traffic disruption.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-182951"], "description": "Fixed an issue where commits remained at 98% for an hour and then failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-173469"], "description": "Fixed an intermittent issue where websites were blocked and categorized as not resolved.", "workaround": null, "resolved_in": null}
+]}

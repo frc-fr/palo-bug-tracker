@@ -1,0 +1,5 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-release-information/changes-to-default-behavior/panorama-changes", "branch": "8.1", "kind": "changes", "title": "Panorama Changes in PAN-OS 8.1", "version": null, "skipped": 0, "changes": [
+  ["Templates and Template Stacks", "You must assign managed devices to a template stack instead of a template."],
+  ["Templates and Template Stacks", "A maximum of 8 templates can be assigned to a template stack."],
+  ["Device Groups", "You can only view the template configuration for a device group if devices in the device group, and the template, are associated with the same template stack."]
+]}

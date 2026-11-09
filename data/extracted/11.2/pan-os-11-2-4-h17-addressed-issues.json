@@ -1,0 +1,4 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-4-known-and-addressed-issues/pan-os-11-2-4-h17-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.4-h17 Addressed Issues", "version": "11.2.4-h17", "skipped": 1, "issues": [
+  {"ids": ["PAN-288001"], "description": "Fixed an issue where devices with 5G cellular modems did not support the ATT FirstNet auto Access Point Name (APN).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267614"], "description": "Fixed an issue where the Panorama web interface was slower than expected due to high CPU utilization on the mongodb process.", "workaround": null, "resolved_in": null}
+]}

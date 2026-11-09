@@ -1,0 +1,3 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-2-known-and-addressed-issues/pan-os-10-2-2-h5-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.2-h5 Addressed Issues", "version": "10.2.2-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-252214"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null}
+]}

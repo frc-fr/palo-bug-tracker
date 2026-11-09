@@ -1,0 +1,3 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h7-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h7 Addressed Issues", "version": "12.1.4-h7", "skipped": 1, "issues": [
+  {"ids": ["PAN-317755"], "description": "Fixed an issue on Panorama where selective push operations failed when plugin configurations included access-domain or log-collector references.", "workaround": null, "resolved_in": null}
+]}

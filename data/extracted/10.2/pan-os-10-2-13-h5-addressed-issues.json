@@ -1,0 +1,6 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-13-known-and-addressed-issues/pan-os-10-2-13-h5-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.13-h5 Addressed Issues", "version": "10.2.13-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-279746"], "description": "Fixed an issue where SMTP packets were not sent out when the Client Hello arrived at the firewall in multiple out-of-order segments and the traffic was not subject to SSL decryption.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268815"], "description": "Fixed an issue that caused the firewall to reboot due to the wifclient exiting multiple times when using IoT Security.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268800"], "description": "Fixed an issue where a large number of logs caused the logrcvr process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268705"], "description": "Fixed an intermittent issue where the firewall failed to process FTP traffic after upgrading to PAN-OS 10.1.14.", "workaround": null, "resolved_in": null}
+]}

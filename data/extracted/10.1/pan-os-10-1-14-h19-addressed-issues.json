@@ -1,0 +1,5 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h19-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.14-h19 Addressed Issues", "version": "10.1.14-h19", "skipped": 0, "issues": [
+  {"ids": ["PAN-269091"], "description": "Fixed an issue where the varrcvr process stopped responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-258570"], "description": "Fixed an issue where the firewall might reboot unexpectedly due to the varrcvr process progressively using more memory when WildFire file forwarding is handling PE files.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-238594"], "description": "Fixed an issue where the firewall rebooted when a QSFP28 cable was removed from the port while the port was passing traffic.", "workaround": null, "resolved_in": null}
+]}

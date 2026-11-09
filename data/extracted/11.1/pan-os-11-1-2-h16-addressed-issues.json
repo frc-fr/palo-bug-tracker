@@ -1,0 +1,15 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-2-known-and-addressed-issues/pan-os-11-1-2-h16-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.2-h16 Addressed Issues", "version": "11.1.2-h16", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address (PAN-SA-2024-0015) and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-269000"], "description": "Fixed an issue where the firewall stopped responding due to a NULL pointer dereference when path monitoring failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-265785"], "description": "Fixed an issue where the firewall rebooted due to a sysd variable being modified before it was created.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-265179"], "description": "Fixed an issue where a kernel race condition caused the firewall to reboot with a kernel panic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263973"], "description": "Fixed an issue where log collectors had a low incoming log rate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-263208"], "description": "(PA-5440 and PA-5445 firewalls only) Fixed an issue where interrupts were generated at a certain packet rate, and dataplane processes missed heartbeats, which caused the dataplane to go down.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259881"], "description": "Fixed an issue on Panorama where traffic log details were not displayed under detailed log view.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259351"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-256223"], "description": "Fixed an issue where device telemetry log collection filled the root partition.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255747"], "description": "Fixed an issue on the firewall where CLI commands returned Server error: op command for client dagger timed out as client is not available.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253485"], "description": "(Firewalls in active/passive HA configurations only) Fixed an issue where dataplane packet capture filter configuration failed on the active firewall with the error op command for client dagger timed out as client is not available.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-249300"], "description": "Fixed an issue where, when CUID was enabled, the CUID firewall pub node was slower than expected when processing incoming traffic and User-ID mapping redistribution between PAN-OS nodes was impacted.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-219805"], "description": "Fixed an issue where the reportd process stopped responding due to a race condition.", "workaround": null, "resolved_in": null}
+]}

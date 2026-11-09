@@ -1,0 +1,6 @@
+{"path": "pan-os/9-1/pan-os-release-notes/pan-os-9-1-addressed-issues/pan-os-9-1-15-h1-addressed-issues", "branch": "9.1", "kind": "addressed", "title": "PAN-OS 9.1.15-h1 Addressed Issues", "version": "9.1.15-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-204118"], "description": "Fixed an issue where browser sessions stopped responding device group template admin users with access domains that had many device groups or templates.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-199500"], "description": "Fixed an issue where, when many NAT policy rules were configured, the pan_comm process stopped responding after a configuration commit due to a high number of debug messages.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-196874"], "description": "Fixed an issue where, when the firewall accepted ICMP redirect messages on the management interface, the firewall did not clear the route from the cache.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-202247"], "description": "Fixed an issue with firewalls in HA configurations where the firewall dropped IKE SA connections if the peer firewall received an INVALID_SPI message. This occurred even though no IKE SA was associated with the SPI in the received INVALID-SPI payload.", "workaround": null, "resolved_in": null}
+]}

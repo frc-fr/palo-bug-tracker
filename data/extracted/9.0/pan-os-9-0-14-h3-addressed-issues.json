@@ -1,0 +1,8 @@
+{"path": "pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-14-h3-addressed-issues", "branch": "9.0", "kind": "addressed", "title": "PAN-OS 9.0.14-h3 Addressed Issues", "version": "9.0.14-h3", "skipped": 0, "issues": [
+  {"ids": ["PAN-176661"], "description": "Fixed an issue in Simple Certificate Enrollment Protocol (SCEP).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-176655", "PAN-158334"], "description": "A fix was made to address an OS command injection vulnerability in the PAN-OS CLI that enabled an authenticated administrator with access to the CLI to execute arbitrary OS commands to escalate privileges.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-176653"], "description": "A fix was made to address an OS command injection vulnerability in the PAN-OS web interface that enabled an authenticated administrator with permissions to use XML API to execute arbitrary OS commands to escalate privileges.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-176618"], "description": "A fix was made to address an OS command injection vulnerability in PAN-OS that existed when performing dynamic updates.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-171203"], "description": "Fixed an issue in a high availability (HA) configuration where, when one firewall was active and its peer was in a suspended state, the suspended firewall continued to send traffic, which triggered the detection of duplicate MAC addresses.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-160708"], "description": "Fixed an issue where the dataplane restarted after configuring a deny_all policy.", "workaround": null, "resolved_in": null}
+]}

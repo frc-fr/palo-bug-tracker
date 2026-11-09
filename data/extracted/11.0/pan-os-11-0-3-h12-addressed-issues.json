@@ -1,0 +1,6 @@
+{"path": "pan-os/11-0/pan-os-release-notes/pan-os-11-0-3-known-and-addressed-issues/pan-os-11-0-3-h12-addressed-issues", "branch": "11.0", "kind": "addressed", "title": "PAN-OS 11.0.3-h12 Addressed Issues", "version": "11.0.3-h12", "skipped": 0, "issues": [
+  {"ids": ["PAN-253317"], "description": "(VM-Series firewalls on Microsoft Azure environments only) Fixed an issue where you were unable to log in to the firewall after a private data reset.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246960"], "description": "Fixed an issue where firewalls failed to fetch content updates from the Wildfire Private Cloud due to an Unsupported protocol error.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244648"], "description": "(PA-5200 Series only) Fixed an issue where the firewall did not boot up after a factory reset, and, with FIPS mode enabled, the firewall rebooted into maintenance mode.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-238769"], "description": "(VM-Series firewalls in FIPS-CC mode only) Fixed an issue where upgrading Panorama caused all locally created Security policy rule actions to Deny.", "workaround": null, "resolved_in": null}
+]}

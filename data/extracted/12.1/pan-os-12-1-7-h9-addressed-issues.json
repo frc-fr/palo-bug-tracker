@@ -1,0 +1,3 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-7-known-and-addressed-issues/pan-os-12-1-7-h9-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.7-h9 Addressed Issues", "version": "12.1.7-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-338789"], "description": "Fixed an issue where Management Plane memory utilization increased rapidly, which led to out-of-memory events, high availability failovers, and restarts of Management Plane processes. With this fix, Management Plane memory utilization remains stable", "workaround": null, "resolved_in": null}
+]}

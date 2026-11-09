@@ -1,0 +1,14 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-10-known-and-addressed-issues/pan-os-10-1-10-h2-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.10-h2 Addressed Issues", "version": "10.1.10-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-225169"], "description": "Added a CLI command to view Strata Logging Service queue usage.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-223501"], "description": "Fixed an issue where diagnostic information for the dataplane in the dp-monitor.log file was not complete.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222712"], "description": "(PA-5450 firewalls only) Fixed a low frequency DPC restart issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-221984"], "description": "(VM-Series firewalls in Microsoft Azure environments only) Fixed an issue where an interface went down after a hotplug event and was only recoverable by restarting the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-219508"], "description": "(VM-Series, PA-400 Series, PA-1400, PA-3400, and PA-5400 Series firewalls only) Fixed an issue where Bidirectional Forwarding Detection (BFD) packets experienced a delay in processing, which caused the BFD connection to flap.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215436"], "description": "Fixed an issue with the web interface where the latest logs took longer than expected to display under Monitor.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215317"], "description": "Fixed an issue where the dataplane stopped responding unexpectedly with the error message comm exited with signal of 10.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-210875"], "description": "Fixed an issue where the pan_task process stopped responding due to software packet buffer 3 trailer corruption, which caused the firewall to restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-195439"], "description": "(VM-Series firewalls in Microsoft Azure environments only) Fixed an issue where the dataplane interface status went down after a hotplug event triggered by Azure infrastructure.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-184630"], "description": "Fixed an issue where TLS clients, such as those using OpenSSL 3.0, enforced the TLS renegotiation extension (RFC 5746).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-180082"], "description": "Fixed an issue where errors in brdagent logs caused dataplane path monitoring failure.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-160633"], "description": "(PA-3200 Series, PA-5200 Series, and PA-7000 Series firewalls only) Fixed an issue where the dataplane restarted repeatedly due to an internal path monitoring failures until a power cycle.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,9 @@
+{"path": "pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-17-addressed-issues", "branch": "9.0", "kind": "addressed", "title": "PAN-OS 9.0.17 Addressed Issues", "version": "9.0.17", "skipped": 0, "issues": [
+  {"ids": ["PAN-189414"], "description": "Fixed an issue where TCP packets were dropped during the first zone transfer when DNS security was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-188303"], "description": "Fixed an issue where the serial number displayed as unknown after running the show system state CLI command.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-180916"], "description": "Fixed an issue where DNS security caused the (time-to-live) value of the pointer record (PTR) to be overwritten with a value of 30 seconds.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-176153"], "description": "(PA-7000 Series firewalls with 20G NPC (Network Processing Cards) only) Fixed a memory allocation issue where the NPC was unable to successfully boot up on the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-175003"], "description": "Fixed a connection issue with the sysd process that caused FIB entries to not be updated.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-149008"], "description": "Fixed an issue where the CLI command Show config running following the CLI command set cli op-command-xml-output on produces an unreadable output.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-127479"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,4 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-26-h1-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.26-h1 Addressed Issues", "version": "8.1.26-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-239241"], "description": "Extended the firewall Panorama root CA certificate which was previously set to expire on April 7th, 2024.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-237935"], "description": "Extended the root certificate for WildFire appliances to December 31, 2032.", "workaround": null, "resolved_in": null}
+]}

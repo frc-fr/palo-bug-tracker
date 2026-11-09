@@ -1,0 +1,5 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h30-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h30 Addressed Issues", "version": "10.2.10-h30", "skipped": 0, "issues": [
+  {"ids": ["PAN-301222"], "description": "Fixed an issue where DNS Security logs incorrectly displayed a sinkhole action for benign DNS categories due to the firewall saving the drop or sinkhole action in session flags without discarding the session.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-291653"], "description": "Fixed an issue where the GlobalProtect host ID field was intermittently blank in traffic logs on Prisma Access, even when the user was connected and had the correct host ID information. This occurred when the IP address to host ID entry expired and the entry was re-inserted without the dataplane flag being set.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-195264"], "description": "Fixed an issue where the login lifetime countdown timer reset when using an authentication override cookie to log in to the gateway.", "workaround": null, "resolved_in": null}
+]}

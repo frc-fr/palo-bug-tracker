@@ -1,0 +1,5 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-11-known-and-addressed-issues/pan-os-10-2-11-h1-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.11-h1 Addressed Issues", "version": "10.2.11-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-263226"], "description": "Fixed an issue where decryption based traffic failed on Explicit Proxy nodes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261917"], "description": "Fixed an issue where websites with a no-decrypt policy rule were decrypted in traffic log when using a Google Chrome browser with PQC enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257957"], "description": "(Firewalls and Panorama appliances in FIPS-CC mode only) Fixed an issue where the authd process restarted if RADIUS PAP/CHAP authentication was used.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,11 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-11-known-and-addressed-issues/pan-os-10-1-11-h10-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.11-h10 Addressed Issues", "version": "10.1.11-h10", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260796"], "description": "Fixed an issue where servers were not accessible through an active SSL GlobalProtect VPN tunnel until a new connection was established or the session was cleared on the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-254704"], "description": "(LSVPN Portal firewalls in active/passive HA configurations only) Fixed an issue where the satellite cookie key did not sync between LSVPN portal high availability (HA) firewalls, which resulted in re-authentication of satellites with the portal during an HA failover.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248748"], "description": "Fixed an issue that caused the dataplane to stop responding when running a packet diagnostic with Jumbo frames enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242561"], "description": "Fixed an issue where GlobalProtect tunnels disconnected shortly after being established when SSL was used as the transfer protocol.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-239952"], "description": "(Firewalls in active/passive HA configurations only) Fixed an issue where HA sync messages from the active firewall took longer than expected to reach the passive firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225969"], "description": "Fixed an issue where some traffic was not correctly identified for data filtering.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-217147"], "description": "Fixed an issue where commits took longer than expected when a large number of Security policy rules were configured.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-210260"], "description": "Fixed an issue on firewalls in HA configurations where the peer satellite firewall was able to connect to the GlobalProtect portal without username and password authentication.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,4 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h9-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h9 Addressed Issues", "version": "12.1.4-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-329834"], "description": "Fixed an issue where a memory leak associated with some display CLI commands caused instability.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-319838"], "description": "Fixed an issue where SFP ports did not establish a link with a third-party peer device when forced speed was configured on the firewall and the peer device was set to nonegotiate.", "workaround": null, "resolved_in": null}
+]}

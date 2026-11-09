@@ -1,0 +1,14 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-4-known-and-addressed-issues/pan-os-10-2-4-h2-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.4-h2 Addressed Issues", "version": "10.2.4-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-218285"], "description": "Fixed an issue where after switching the SPN by suspending the active SPN, the forwarding rule was not correctly pointing to the new active node when moved from 3 rules (TCP/UDP/ICMP) to 1 Layer 3 default rule in GCP.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-217484"], "description": "Fixed an issue where the rasmgr process used 100% CPU due to a maximum duration timer not being set, which caused the GlobalProtect gateway to be unavailable.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-217431"], "description": "Fixed an issue with slot 2 DPCs where URL Filtering did not work as expected after upgrading to PAN-OS 10.1.9.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216710"], "description": "Fixed an issue with firewalls in active/active HA configurations where GlobalProtect disconnected when the original suspected active-primary firewall became active-secondary.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216036"], "description": "Fixed an issue where the all_pktproc process stopped responding, which caused the firewall to enter a nonfunctional state.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215823"], "description": "Fixed an issue on log collectors where the reportd process stopped responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-215496"], "description": "Fixed an issue where 100G ports did not come up with BIDI QSFP modules.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-214406"], "description": "Fixed an issue with Elasticsearch where ES tunnels weren’t started and were forked incorrectly, which caused them to fail.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-213079"], "description": "Fixed an issue with Captive Portal SAML authentication by increasing the number of retries in the Nginx configuration.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-212726", "PAN-211519"], "description": "Fixed an issue where RTP/RTCP packets were dropped for SIP calls by SIP ALG when the source NAT translation type was persistent Dynamic IP And Port.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-211870"], "description": "Fixed an issue where path monitoring failure occurred, which caused high availability failover.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-195912"], "description": "Fixed an issue where connections from the firewall to Strata Logging Service failed.", "workaround": null, "resolved_in": null}
+]}

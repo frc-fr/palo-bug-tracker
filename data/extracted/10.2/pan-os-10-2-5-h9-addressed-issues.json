@@ -1,0 +1,10 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-5-known-and-addressed-issues/pan-os-10-2-5-h9-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.5-h9 Addressed Issues", "version": "10.2.5-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address (PAN-SA-2024-0015) and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248427"], "description": "Fixed an issue where push operations took longer than expected to complete.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247403"], "description": "(Panorama virtual appliances only) Fixed an issue where the push scope CLI command took longer than expected, which caused the web interface to be slow.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-245850"], "description": "Fixed an issue on Panorama appliances in active/passive HA configurations where the firewalls entered an HA out-of-sync status and jobs failed on the passive appliance with the error message Could not merged running config from file.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244746"], "description": "Fixed an issue where changes committed on Panorama were not reflected on the firewall after a successful push.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-235840"], "description": "Fixed an issue where, after a configuration push from Panorama to managed firewalls, the status displayed as None and the push took longer than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-228515"], "description": "Fixed an issue where the Elasticsearch cluster health status displayed as yellow or red due to Elasticsearch SSH tunnel flaps.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216941"], "description": "(M-700 Appliances in Log Collector mode only) Fixed an issue where Panorama stopped processing and saving logs.", "workaround": null, "resolved_in": null}
+]}

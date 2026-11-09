@@ -1,0 +1,8 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h2-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h2 Addressed Issues", "version": "10.2.10-h2", "skipped": 0, "issues": [
+  {"ids": ["PAN-259733"], "description": "Fixed an issue where a custom report was not deleted on Panorama when expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259344"], "description": "Fixed an issue where performing a configuration commit on a firewall locally or from Panorama caused a memory leak related to the configd process and resulted in a out-of-memory (OOM) condition.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-258941"], "description": "Fixed an issue where some URLs were not accessible when connected to Prisma Access explicit proxy.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-249266"], "description": "Fixed an issue where the config process virtual memory was exceeded due to delays in post-commit processing.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247099"], "description": "Fixed an issue where the firewall decrypted traffic unexpectedly when the client hello was spread across multiple packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225087"], "description": "Fixed an issue where the dataplane logs were corrupted with unexpected IPv6 addresses.", "workaround": null, "resolved_in": null}
+]}

@@ -1,0 +1,5 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-18-known-and-addressed-issues/pan-os-10-2-18-h8-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.18-h8 Addressed Issues", "version": "10.2.18-h8", "skipped": 1, "issues": [
+  {"ids": ["PAN-317466"], "description": "Fixed an issue where SIP sessions stopped progressing after the firewall received fragmented packets, fragmented at header field.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-306555"], "description": "Fixed an issue where the firewall stopped responding, which led to service outages.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-295803"], "description": "Addressed a memory leak issue under sc3 and automatic commit recovery (ACR) code path.", "workaround": null, "resolved_in": null}
+]}

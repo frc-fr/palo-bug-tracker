@@ -1,0 +1,12 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-9-known-and-addressed-issues/pan-os-10-2-9-h11-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.9-h11 Addressed Issues", "version": "10.2.9-h11", "skipped": 0, "issues": [
+  {"ids": ["PAN-263226"], "description": "Fixed an issue where decryption based traffic failed on Explicit Proxy nodes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261917"], "description": "Fixed an issue where websites with a no-decrypt policy rule were decrypted in traffic log when using a Google Chrome browser with PQC enabled", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260662"], "description": "Fixed an issue where large file downloads were slower than expected when private IP address visibility was enabled.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260218"], "description": "Fixed an issue where BGP Aggregate Advertise filters did not work as expected when the summary option was enabled, and only summarized routes were advertised.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-258996"], "description": "Fixed an issue where the firewall displayed the SFP ports as PowerDown when the SFP transceiver was removed and reinserted or the port was shut down and brought back up on the peer device.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251661"], "description": "Fixed an issue where a memory overwrite occurred during HTTP/2 header inflation.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251563"], "description": "Added CPLD enhancement to capture external power issues.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240612"], "description": "Fixed a kernel panic caused by a third-party issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-233191"], "description": "(PA-5450 firewalls only) Fixed an issue where the Data Processing Card (DPC) restarted due to path monitor failure after QSFP28 disconnected from the Network Processing Card (NPC).", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-226768"], "description": "Fixed an issue where, when the GlobalProtect app was installed on iOS endpoints and the gateway was configured to accept cookies, the app remained in the Connecting stage after authentication, and the GlobalProtect log displayed the error message User is not in allow list. This occurred when the app was restarted or when the app attempted to reconnect after disconnection.", "workaround": null, "resolved_in": null}
+]}

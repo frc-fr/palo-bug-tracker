@@ -1,0 +1,8 @@
+{"path": "pan-os/9-1/pan-os-release-notes/pan-os-9-1-addressed-issues/pan-os-9-1-14-h4-addressed-issues", "branch": "9.1", "kind": "addressed", "title": "PAN-OS 9.1.14-h4 Addressed Issues", "version": "9.1.14-h4", "skipped": 0, "issues": [
+  {"ids": ["PAN-195628"], "description": "Fixed an issue that caused the pan_task process to miss heartbeats and stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-195482"], "description": "Fixed an issue on multi-dataplane platforms where IPSec tunnels continuously flapped.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-194456"], "description": "Fixed an issue where the sysd process disconnected from the pan_dha process after a high availability (HA) failover or reboot.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192999"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-192726"], "description": "Fixed an issue where the firewall dropped TCP traffic inside IPSec tunnels.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-189114"], "description": "Fixed an issue where the dataplane went down, which caused an HA failover.", "workaround": null, "resolved_in": null}
+]}

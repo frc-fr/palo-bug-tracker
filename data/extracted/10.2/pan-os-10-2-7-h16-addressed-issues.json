@@ -1,0 +1,10 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h16-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h16 Addressed Issues", "version": "10.2.7-h16", "skipped": 0, "issues": [
+  {"ids": ["PAN-264871"], "description": "Fixed an issue on Panorama where the configd process stopped responding when viewing IP addresses on dynamic address groups with a large number of IP addresses.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262340"], "description": "Fixed an issue where FQDN resolution failed for address objects, and all FQDN traffic was denied by the interzone-default policy rule.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262287"], "description": "Fixed an issue where dereferencing a NULL pointer that occurred caused pan_task processes to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-250787"], "description": "Fixed an issue where network issues between the firewall and the log collector caused logrcvr process memory exhaustion.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-242910"], "description": "Fixed an issue where a custom based non Superuser was unable to push to firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-231823"], "description": "Fixed an issue where server profile details in the configd process log were incorrectly displayed in plaintext", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230755"], "description": "Fixed an issue where the devsrvr process intermittently restarted when processing traffic with a Cloud App ID.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-226361"], "description": "Fixed an issue where sessions bypassed L7 inspection or ended unexpectedly with the error resources unavailable when the firewall incorrectly interpreted the Content and Threat Detection (CTD) global packet queue as being full.", "workaround": null, "resolved_in": null}
+]}

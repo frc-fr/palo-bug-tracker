@@ -1,0 +1,4 @@
+{"path": "pan-os/11-0/pan-os-release-notes/pan-os-11-0-6-known-and-addressed-issues/pan-os-11-0-6-addressed-issues", "branch": "11.0", "kind": "addressed", "title": "PAN-OS 11.0.6 Addressed Issues", "version": "11.0.6", "skipped": 0, "issues": [
+  {"ids": ["PAN-254181"], "description": "(CN-Series firewalls only) Fixed an issue where firewall pods and application pods repeatedly restarted.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253400"], "description": "Fixed an issue where the logrcvr process stopped responding.", "workaround": null, "resolved_in": null}
+]}

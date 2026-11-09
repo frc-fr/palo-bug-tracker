@@ -1,0 +1,5 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-8-h5-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.8-h5 Addressed Issues", "version": "8.1.8-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-119745"], "description": "A security-related fix was made to address the Netflix Linux kernel TCP SACK vulnerability (PAN-SA-2019-0013 /,,, and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-118869"], "description": "A security-related fix was made to address an issue where the php-debug log incorrectly displayed non-sanitized data (PAN-SA-2019-0019 /.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-107239"], "description": "A security-related fix was made to address cleartext passwords and keys that were visible in the logs for XML API calls (PAN-SA-2019-0019 /.", "workaround": null, "resolved_in": null}
+]}

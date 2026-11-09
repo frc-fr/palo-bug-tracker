@@ -1,0 +1,10 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-13-known-and-addressed-issues/pan-os-10-1-13-h1-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.13-h1 Addressed Issues", "version": "10.1.13-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-248651"], "description": "Fixed a GlobalProtect issue that prevented the firewall from sending authentication cookies.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248105"], "description": "Fixed an issue where the GlobalProtect SSL VPN tunnel immediately disconnected due to a keep-alive timeout.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246960"], "description": "Fixed an issue where firewalls failed to fetch content updates from the Wildfire Private Cloud due to an Unsupported protocol error.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246215"], "description": "Fixed an issue where the sleep time for a suspended pan_task process caused configuration and policy updates to be blocked.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-243463"], "description": "Fixed an issue where high Enhanced Application Log traffic used excess system resources and caused processes to not work.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-239354"], "description": "Fixed an issue where DNS resolution was delayed when an Antispyware policy rule was applied to both client to firewall and firewall to internal DNS server legs of a connection.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225963"], "description": "Fixed an issue where the IP address-to-user mapping was not correct.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-220907"], "description": "(VM-Series firewalls only) Fixed an issue where large packets were dropped from the dataplane to the management plane, which caused OSPF neighborship to fail.", "workaround": null, "resolved_in": null}
+]}

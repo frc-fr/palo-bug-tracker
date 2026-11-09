@@ -1,0 +1,10 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-14-known-and-addressed-issues/pan-os-10-1-14-h8-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.14-h8 Addressed Issues", "version": "10.1.14-h8", "skipped": 0, "issues": [
+  {"ids": ["PAN-273215"], "description": "Fixed an issue where a syntax error in the index generation script caused a high management plane CPU load after upgrading.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268823"], "description": "Fixed an issue where Monitor > Log Display did not display all logs when you applied", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268339"], "description": "Fixed an issue where syslog-ng failed to start due to the syslog-ng.config file being corrupted when upgrading from PAN-OS 10.2.9-h1 to PAN-OS 10.2.11.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264871"], "description": "Fixed an issue on Panorama where the configd process stopped responding when viewing IP addresses on dynamic address groups with a large number of IP addresses.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262330"], "description": "Fixed an issue where traffic logs were not forwarded to the syslog server.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260604"], "description": "Fixed an issue where the firewall displayed inaccurate throughput utilization stats in NetFlow analyzer tools.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260512"], "description": "Fixed an issue where accessing the IP address of the device address group objects from the user interface caused the configd process to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259351"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null}
+]}

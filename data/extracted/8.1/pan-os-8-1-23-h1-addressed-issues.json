@@ -1,0 +1,4 @@
+{"path": "pan-os/8-1/pan-os-release-notes/pan-os-8-1-addressed-issues/pan-os-8-1-23-h1-addressed-issues", "branch": "8.1", "kind": "addressed", "title": "PAN-OS 8.1.23-h1 Addressed Issues", "version": "8.1.23-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-192999"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-140736"], "description": "Fixed an issue where configuration synchronization failed in a high availability (HA) configuration.", "workaround": null, "resolved_in": null}
+]}

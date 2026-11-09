@@ -1,0 +1,8 @@
+{"path": "pan-os/10-1/pan-os-release-notes/pan-os-10-1-13-known-and-addressed-issues/pan-os-10-1-13-h5-addressed-issues", "branch": "10.1", "kind": "addressed", "title": "PAN-OS 10.1.13-h5 Addressed Issues", "version": "10.1.13-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262340"], "description": "Fixed an issue where FQDN resolution failed for address objects, and all FQDN traffic was denied by the interzone-default policy rule.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262287"], "description": "Fixed an issue where dereferencing a NULL pointer that occurred caused pan_task processes to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260842"], "description": "A CLI command was introduced to address an issue where TCP packets were out of order.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-230755"], "description": "Fixed an issue where the devsrvr process intermittently restarted when processing traffic with a Cloud App ID.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216368"], "description": "Fixed an issue where the configuration commit process on chassis based platforms did not recognize load failures on the dataplane.", "workaround": null, "resolved_in": null}
+]}

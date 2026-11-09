@@ -1,0 +1,7 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h5-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h5 Addressed Issues", "version": "10.2.10-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-256077"], "description": "Fixed an issue where the GlobalProtect client would disconnect consistently due to keep-alive timeouts when using an SSL-only tunnel.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-241044"], "description": "Fixed an issue where traffic was denied by the interzone-default policy rule when a Security policy rule with an FQDN destination was configured.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222590"], "description": "Fixed an issue where a semicolon appeared at the end of file names of data filtering logs.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-217198"], "description": "Fixed an issue where Security policy rules did not display values for FQDN.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-203231"], "description": "Fixed an issue where Software Version in the device summary report exported from Panorama included HTML tags.", "workaround": null, "resolved_in": null}
+]}

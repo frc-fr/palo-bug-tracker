@@ -1,0 +1,16 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-9-known-and-addressed-issues/pan-os-10-2-9-h21-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.9-h21 Addressed Issues", "version": "10.2.9-h21", "skipped": 0, "issues": [
+  {"ids": ["PAN-279604"], "description": "Fixed an issue where scheduled SaaS application usage reports were generated incorrectly, and the login page was displayed instead of the report content.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-274726"], "description": "Fixed an issue where Wildfire signature generation was enabled on all nodes in a cluster instead of only the active node.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273994"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273971"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273278"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-271926"], "description": "Fixed an issue where TLS 1.3 decryption failed with a bad record MAC error when the firewall was configured to decrypt and inspect TLS traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-270549"], "description": "Fixed an issue where some TLS connections were not handled correctly, which led to instability in the dataplane.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268501"], "description": "Fixed an issue where the firewall was unable to generate a TSF file due to a full root partition", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268260"], "description": "Fixed an issue on hardware firewalls where, when SSL decryption was enabled and Client Hello messages spanned multiple TCP segments, some SSL decrypted sessions failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267781"], "description": "Fixed an issue where Panorama did not display the Source Dynamic Address Group.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-267671"], "description": "Fixed an issue where the firewall rebooted unexpectedly due to the all_task process restarting and repeated OOM conditions occurring on the pan_task process.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261739"], "description": "(VM-Series firewalls in Microsoft Azure environments only) Fixed an issue where the firewall displayed 0 for the physical port counters read from MAC.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-259610"], "description": "Fixed an issue where Wildfire content installation failed for WF-500B clusters when deployed from Panorama using the deployment schedule.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255820"], "description": "Fixed an issue where the WildFire signature generation check box in Panorama did not register a change in the configuration.", "workaround": null, "resolved_in": null}
+]}

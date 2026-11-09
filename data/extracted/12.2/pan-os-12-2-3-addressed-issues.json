@@ -1,0 +1,14 @@
+{"path": "ngfw/release-notes/12-2/pan-os-12-2-3-known-and-addressed-issues/pan-os-12-2-3-addressed-issues", "branch": "12.2", "kind": "addressed", "title": "PAN-OS 12.2.3 Addressed Issues", "version": "12.2.3", "skipped": 1, "issues": [
+  {"ids": ["PAN-334992"], "description": "Fixed an issue where a PA-455 firewall in FIPS-CC mode did not start correctly after upgrading from PAN-OS 12.1.8 to 12.2.2.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-334724"], "description": "Fixed an issue where installing WildFire® content updates disabled PAN-OS Shield.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-334338"], "description": "Fixed an issue where a PA-450 firewall restarted with the error general system-shutdown 1: The system is shutting down due to md initiated dataplane restarts exhausted.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-331856"], "description": "Fixed an issue where the dnsproxyd process became unresponsive on TCP/53 connections on VM-Series firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-329550"], "description": "Fixed an issue where PA-5280 firewalls experienced multiple all_pktproc process restarts, resulting in the dataplane going down and an HA failover.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-329407"], "description": "Fixed an issue where, after upgrading a PA-450R-5G firewall, the cellular interface did not come up and entered a Dead Zone state.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-326056"], "description": "Fixed an issue where some ACE applications did not match the correct security policy when the service was set to Application Default on PA-5450 firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-325724"], "description": "Fixed an issue where importing a PKCS12 certificate on Panorama® failed with the error Import of certificate and private-key failed. Failed to extract certificate.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-319343"], "description": "Fixed an issue where management plane resource exhaustion caused commit latency across Prisma® Access gateways.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-315630"], "description": "Fixed an issue where a PA-450 firewall dropped new connections with the error Packet dropped, session allocation failure.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-310218"], "description": "Fixed an issue where hidden NFS files under /opt/var/s7/lp/log/pan filled up disk space on PA-7080 firewalls.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-295806"], "description": "Fixed a memory leak in the connection handling process.", "workaround": null, "resolved_in": null}
+]}

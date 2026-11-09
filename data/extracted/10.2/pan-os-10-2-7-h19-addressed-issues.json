@@ -1,0 +1,7 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h19-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h19 Addressed Issues", "version": "10.2.7-h19", "skipped": 0, "issues": [
+  {"ids": ["PAN-273730"], "description": "(PA-7000 Series firewalls only) Fixed an issue where the web interface became unresponsive after upgrading to PAN-OS 10.2.7-h8.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268727"], "description": "Fixed an issue where traffic was dropped when the accumulation proxy was enabled and header insertion modified packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-260131"], "description": "Fixed an issue where the firewall consumed a large amount of memory when forwarding raw logs.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-248752"], "description": "(PA-3200 Series, PA-5200 Series, and PA-850 firewalls only) Fixed an issue where the firewall did not have enough Linux memory on the dataplane, which caused the firewall to restart.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246772"], "description": "Fixed an issue on the firewall where the dataplane went down due to a path monitor failure caused by an out-of-memory (OOM) condition related to the pan_task process.", "workaround": null, "resolved_in": null}
+]}

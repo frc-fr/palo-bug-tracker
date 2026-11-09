@@ -1,0 +1,21 @@
+{"path": "pan-os/11-1/pan-os-release-notes/pan-os-11-1-2-known-and-addressed-issues/pan-os-11-1-2-h9-addressed-issues", "branch": "11.1", "kind": "addressed", "title": "PAN-OS 11.1.2-h9 Addressed Issues", "version": "11.1.2-h9", "skipped": 0, "issues": [
+  {"ids": ["PAN-258225"], "description": "Fixed an issue on the Panorama web interface where Security policy rules loaded more slowly than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257615"], "description": "Fixed an issue on Panorama where logs did not display or displayed intermittently on the web interface.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-256725"], "description": "Fixed an issue on the Panorama interface where Traffic and Unified event details loaded more slowly than expected.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255868"], "description": "(PA-3400 Series firewalls only) Fixed an issue where the firewall entered maintenance mode after enabling kernel data collection during the silent reboot.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255266"], "description": "Fixed an issue where you were unable to clone a template stack with the Pre-Shared Key variable.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-254411"], "description": "Fixed an issue where the configd process stopped responding, which caused RR_CONNECTION_REFUSED error messages to be displayed in admin sessions.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-253546"], "description": "Fixed an issue where a TLS client hello was split into multiple packets and arrived out of order, so the packets were dropped and the session terminated.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-251563"], "description": "Added CPLD enhancement to capture external power issues.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-247099"], "description": "Fixed an issue where the firewall decrypted traffic unexpectedly when the client hello was spread across multiple packets.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246772"], "description": "Fixed an issue on the firewall where the dataplane went down due to a path monitor failure caused by an OOM condition related to the pan_task process.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-246059"], "description": "Fixed an issue where forwarded logs were not visible on Panorama due to the Elasticsearch service not starting when it encountered old and unsupported indices.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-245428"], "description": "Fixed an issue where FIB entries aged out and were incorrectly removed after an HA failover event.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244548"], "description": "Fixed an issue where ECMP sessions changed destination MAC addresses mid-session, which caused connections to be reset.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-243098"], "description": "Fixed an issue with corrupted images when SSL decryption and Security profiles were configured.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240739"], "description": "Fixed an issue where the ECMP FIB update on the dataplane didn't clear the pending change flag, which caused the next non-ECMP FIB update to miss the latest generation ID and age out after 5 minutes.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240612"], "description": "Fixed a kernel panic caused by a third-party issue.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240596"], "description": "Fixed an issue where the all_task process stopped responding due to an invalid memory address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-236133"], "description": "Fixed an issue where SSL traffic was impacted when SSL Command and Control detector for Incline Cloud Analysis was set to reset-both, reset-client, reset-server, or drop.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-234560"], "description": "Fixed an issue where the daily summary report displayed IPv6 addresses instead of IPv4 addresses.", "workaround": null, "resolved_in": null}
+]}

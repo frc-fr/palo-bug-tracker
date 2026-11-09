@@ -1,0 +1,4 @@
+{"path": "cn-series/release-notes/cn-series-10-x-release-notes/addressed-issues-in-cn-series-10-x", "branch": "10.x", "kind": "addressed", "title": "Addressed Issues in CN-Series 10.x", "version": null, "skipped": 0, "issues": [
+  {"ids": ["CN-181"], "description": "Fixed an issue that caused MP /opt/plugins/installed is at 99% for PAN-OS 10.2.x. Increased the pancfg disk size from 8GB to 16GB.", "workaround": null, "resolved_in": null},
+  {"ids": ["CN-230"], "description": "Fixed an issue that caused horizontal pod autoscaling (HPA) using KEDA on AKS platform failure to obtain external metrics.", "workaround": null, "resolved_in": null}
+]}

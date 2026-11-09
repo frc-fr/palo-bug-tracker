@@ -1,0 +1,7 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-10-known-and-addressed-issues/pan-os-10-2-10-h39-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.10-h39 Addressed Issues", "version": "10.2.10-h39", "skipped": 1, "issues": [
+  {"ids": ["PAN-314630"], "description": "Fixed an issue where the firewall repeatedly rebooted and entered maintenance mode, and a factory reset was required.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-300055"], "description": "Fixed an issue where the firewall experienced high disk utilization in the /opt/pancfg/mgmt/content-preview directory due to older content data not being automatically removed when an error occurred during the process.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-298788"], "description": "Fixed an issue where the /pancfg partition on the Azure Cloud NGFW reached 100% utilization, which caused commit failures.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-284073"], "description": "Fixed an issue on the firewall that caused commits to fail and the web interface to become inaccessible.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-278611"], "description": "Fixed an issue on Panorama where software images were not purged from the /opt/pancfg/mgmt/sw-images folder.", "workaround": null, "resolved_in": null}
+]}

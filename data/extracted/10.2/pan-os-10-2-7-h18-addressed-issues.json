@@ -1,0 +1,9 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h18-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h18 Addressed Issues", "version": "10.2.7-h18", "skipped": 0, "issues": [
+  {"ids": ["PAN-272809"], "description": "A fix was made to address (PAN-SA-2024-0015) and.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-262287"], "description": "Fixed an issue where dereferencing a NULL pointer that occurred caused pan_task processes to stop responding.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-255653"], "description": "Fixed a high availability (HA) failover issue where, when Management Processing Card (MPC) or Base Card (BC) failures occurred, the HA link went down, which caused fpp-down events on one firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240450"], "description": "Fixed an issue where commits failed when pushing a configuration to a large number of device groups (vsys) on a firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-234560"], "description": "Fixed an issue where the daily summary report displayed IPv6 addresses instead of IPv4 addresses.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-226361"], "description": "Fixed an issue where sessions bypassed L7 inspection or ended unexpectedly with the error resources unavailable when the firewall incorrectly interpreted the Content and Threat Detection (CTD) global packet queue as being full.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-219805"], "description": "Fixed an issue where the reportd process stopped responding due to a race condition.", "workaround": null, "resolved_in": null}
+]}

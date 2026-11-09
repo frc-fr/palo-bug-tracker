@@ -1,0 +1,4 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h34-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h34 Addressed Issues", "version": "10.2.7-h34", "skipped": 1, "issues": [
+  {"ids": ["PAN-269254"], "description": "Fixed an issue where high CPU utilization caused GlobalProtect VPN tunnels to flap, users to be disconnected, and the CLI to become unresponsive. This occurred when a large number of GlobalProtect users were actively processing application traffic.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-223481"], "description": "(PA-5450 firewalls only) Fixed an issue where the all_pktproc process stopped responding when the firewall was on PAN-OS 10.1.9-h3 or a later release.", "workaround": null, "resolved_in": null}
+]}

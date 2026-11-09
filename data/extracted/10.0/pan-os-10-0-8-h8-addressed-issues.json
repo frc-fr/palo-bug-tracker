@@ -1,0 +1,4 @@
+{"path": "pan-os/10-0/pan-os-release-notes/pan-os-10-0-addressed-issues/pan-os-10-0-8-h8-addressed-issues", "branch": "10.0", "kind": "addressed", "title": "PAN-OS 10.0.8-h8 Addressed Issues", "version": "10.0.8-h8", "skipped": 0, "issues": [
+  {"ids": ["PAN-184592"], "description": "A fix was made to address a remote code execution vulnerability in Elasticsearch included with Panorama management servers known as Log4Shell.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-183767"], "description": "Fixed an issue where downloading Dynamic Updates files failed when connected to the static update server at us-static.updates.paloaltonetworks.com.", "workaround": null, "resolved_in": null}
+]}

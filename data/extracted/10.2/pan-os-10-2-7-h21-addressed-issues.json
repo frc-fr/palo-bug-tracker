@@ -1,0 +1,14 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h21-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h21 Addressed Issues", "version": "10.2.7-h21", "skipped": 0, "issues": [
+  {"ids": ["PAN-274570"], "description": "Fixed an issue where the devsrvr process restarted after a failed commit due to an invalid memory access.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-273215"], "description": "Fixed an issue where a syntax error in the index generation script caused a high management plane CPU load after upgrading.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268823"], "description": "Fixed an issue where Monitor > Log Display did not display all logs when you applied a filter.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-268260"], "description": "Fixed an issue on hardware firewalls where, when SSL decryption was enabled and Client Hello messages spanned multiple TCP segments, some SSL decrypted sessions failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-264249"], "description": "Fixed an issue on the firewall where SNMP queries timed out when using SNMP.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-261332"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-257327"], "description": "(PA-5440 firewalls only) Fixed an issue where a failover event occurred unexpectedly on the firewall.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-244950"], "description": "A fix was made to address.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-243244"], "description": "Fixed an issue where decryption failed for TLSv1.3 with the error message early close notify.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-240596"], "description": "Fixed an issue where the all_task process stopped responding due to an invalid memory address", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-225090"], "description": "Fixed an issue on Panorama where Commit and Push was greyed out when making changes to a template or device group.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-222188"], "description": "A CLI command was introduced to address an issue where SNMP monitoring performance was slower than expected, which resulted in snmpwalk timeouts.", "workaround": null, "resolved_in": null}
+]}

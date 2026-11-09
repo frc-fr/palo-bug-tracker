@@ -1,0 +1,3 @@
+{"path": "pan-os/9-0/pan-os-release-notes/pan-os-9-0-addressed-issues/pan-os-9-0-17-h1-addressed-issues", "branch": "9.0", "kind": "addressed", "title": "PAN-OS 9.0.17-h1 Addressed Issues", "version": "9.0.17-h1", "skipped": 0, "issues": [
+  {"ids": ["PAN-159364", "PAN-152022", "PAN-136676"], "description": "A fix was made to address customer and internal bugs.", "workaround": null, "resolved_in": null}
+]}

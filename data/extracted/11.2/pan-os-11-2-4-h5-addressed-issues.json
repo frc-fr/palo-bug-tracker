@@ -1,0 +1,9 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-4-known-and-addressed-issues/pan-os-11-2-4-h5-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.4-h5 Addressed Issues", "version": "11.2.4-h5", "skipped": 0, "issues": [
+  {"ids": ["PAN-279604"], "description": "Fixed an issue where scheduled SaaS application usage reports were generated incorrectly, and the login page was displayed instead of the report content.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-276177"], "description": "Fixed an issue where App Acceleration did not work with Oracle databases.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-274791"], "description": "Fixed an issue where the firewall rebooted when Shared Pool Type 32 was depleted and traffic matched advanced features.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-269499"], "description": "Fixed an issue where the firewall stopped responding when receiving a high number of logs.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-252224"], "description": "Fixed an issue where Panorama did not forward logs to a syslog server over an SSL connection using CRL as a revocation verification method.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-234082"], "description": "(Panorama virtual appliances only) Fixed an issue where Saas reports were generated with a report period of 0 days.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-216054"], "description": "Fixed an issue that caused the firewall's fan speed to increase while it was idle.", "workaround": null, "resolved_in": null}
+]}

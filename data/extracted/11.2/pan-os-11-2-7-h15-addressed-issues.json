@@ -1,0 +1,4 @@
+{"path": "pan-os/11-2/pan-os-release-notes/pan-os-11-2-7-known-and-addressed-issues/pan-os-11-2-7-h15-addressed-issues", "branch": "11.2", "kind": "addressed", "title": "PAN-OS 11.2.7-h15 Addressed Issues", "version": "11.2.7-h15", "skipped": 0, "issues": [
+  {"ids": ["PAN-325120"], "description": "Fixed an issue on PA-415, PA-415-5G, PA-445, PA-455, and PA-455-5G platforms where certain PAN-OS versions caused intermittent connectivity failures on the Eth1/1 data port and loss of power on PoE ports.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-300615"], "description": "Fixed an issue where the pan_comm process stopped after multiple content versions were installed and the memory limits were reached.", "workaround": null, "resolved_in": null}
+]}
