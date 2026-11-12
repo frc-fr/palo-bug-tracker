@@ -184,3 +184,28 @@ def test_cn_series_pages_cover_a_generation():
     assert fixed[5] == [] and fixed[7] == ["CN-Series 10.x", index["pages"].index("cn/a10")]
     assert index["series"] == {str(index["pages"].index("cn/a10")): "CN-Series 10.x", str(index["pages"].index("cn/k10")): "CN-Series 10.x"}
     assert "10.x" not in index["branches"]
+
+
+from palobugs.hardware import hardware_index, parse_hardware, product_models
+
+
+def test_hardware_rows_keep_firewalls_and_appliances():
+    assert product_models("PA-7000 Series (PAN-PA-7000-100G-NPC-A, PAN-PA-7080-AC-SYS, PAN-PA-7050-DC-SYS, PAN-PA-7050-SMC-B)") == ["PA-7050", "PA-7080"]
+    assert product_models("PA-800 Series (PA-820, PA-850) (PA-820-ZTP, PA-850-ZTP)") == ["PA-820", "PA-850"]
+    assert product_models("K2-Series (PA-5280-K2, PA-7050-K2)") == []
+    assert product_models("PAN-2.5IN-HDD-2TB-PAIR") == []
+    row = "<tr><td>{}</td><td>{}</td><td>{}</td><td></td><td>{}</td><td></td></tr>"
+    page = "<table><tr><th>End-of-Sale Product</th></tr>" + "".join([
+        row.format("PA-220", "January 31, 2023", "January 31, 2028", "PAN-OS 10.2 Standard Support: Until August 27, 2025"),
+        row.format("M-100", "October 31, 2018", "October 31, 2023 (EOL)", "(16GB) PAN-OS 8.1 (EOL) (32GB) PAN-OS 9.1 *"),
+        row.format("LightCyber Magna Master (M-100)", "December 31, 2017", "December 31, 2020 (EOL)", "Magna 3.9 (EOL)"),
+        row.format("ION 3000", "March 15th, 2024", "August 1st, 2029", "Prisma SD-WAN ION 6.5"),
+    ]) + "</table>"
+    found = parse_hardware(page)
+    assert [(a["models"], a["last_software"], a["end_of_life"]) for a in found] == [
+        (["PA-220"], "10.2", "2028-01-31"), (["M-100"], "9.1", "2023-10-31"),
+    ]
+    index = hardware_index(["PA-460"], {"source": "s", "announcements": found})
+    assert list(index["models"]) == ["M-100", "PA-220", "PA-460"]
+    assert index["models"]["PA-220"]["eol"] == [[["PA-220"], None, "10.2", "2028-01-31", found[0]["page"]]]
+    assert index["models"]["PA-220"]["family"] == "PA-200 Series"

@@ -4,13 +4,14 @@ import logging
 import sys
 from pathlib import Path
 
-from . import build, collect, extract, lifecycle
+from . import build, collect, extract, hardware, lifecycle
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="palobugs")
     parser.add_argument("--pages", type=Path, default=Path("sources/pages.json"))
     parser.add_argument("--lifecycle", type=Path, default=Path("sources/lifecycle.json"))
+    parser.add_argument("--hardware", type=Path, default=Path("sources/hardware.json"))
     parser.add_argument("--schedule", type=Path, default=Path("sources/schedule.yml"))
     parser.add_argument("--cache", type=Path, default=Path(".cache/html"))
     parser.add_argument("--output", type=Path, default=Path("data/extracted"))
@@ -32,6 +33,7 @@ def main() -> None:
                                       save=lambda: collect.save_pages(args.pages, pages))
         collect.save_pages(args.pages, pages)
         lifecycle.update_lifecycle(args.lifecycle, client)
+        hardware.update_hardware(args.hardware, client)
         logging.info("%d pages, %d fetched", len(pages), len(fetched))
     elif args.command == "extract":
         problems = extract.extract_all(args.cache, args.output, args.changes, args.pages)
@@ -41,5 +43,5 @@ def main() -> None:
         sys.exit(1 if problems else 0)
     elif args.command == "build":
         summary = build.build_site(args.output, args.pages, args.changes, args.lifecycle, args.schedule,
-                                   args.site, args.dist, args.base_url)
+                                   args.site, args.dist, args.base_url, args.hardware)
         logging.info("%s", summary)

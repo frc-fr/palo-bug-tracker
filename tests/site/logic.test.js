@@ -108,3 +108,11 @@ test("support uses the standard date, and tells the extended one", () => {
 test("a copied table is tab-separated", () => {
   assert.strictEqual(logic.tableText([["ID", "Text"], ["PAN-1", "a\nb"]]), "ID\tText\nPAN-1\ta b");
 });
+
+test("a model is stopped when its last PAN-OS release comes before the latest branch", () => {
+  const entry = { model: "PA-3220", eol: [[["PA-3220"], null, "11.1", "2028-08-31", "p"]], suggested: [] };
+  assert.strictEqual(logic.hardwareStatus(entry, "12.2", "2026-11-12").key, "stopped");
+  const current = { model: "PA-460", eol: [[["PA-460"], null, "12.2", "2032-03-21", "p"]], suggested: [] };
+  assert.strictEqual(logic.hardwareStatus(current, "12.2", "2026-11-12").key, "announced");
+  assert.strictEqual(logic.hardwareStatus({ model: "PA-5410", eol: [], suggested: [] }, "12.2", "2026-11-12").key, "none");
+});

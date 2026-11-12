@@ -20,8 +20,8 @@ def test_used_keys_exist():
     used = set(re.findall(r'\bt\("([\w.]+)"', (SITE / "app.js").read_text(encoding="utf-8")))
     used |= set(re.findall(r'data-(?:text|html|label|placeholder)="([\w.]+)"', (SITE / "index.html").read_text(encoding="utf-8")))
     dynamic = {"help.bugs", "help.upgrade", "help.news", "help.hardware", "detail.fixedSince", "detail.fixedIn",
-               "detail.knownIn", "detail.openSince", "detail.dropped", "detail.noMention", "hardware.model", "hardware.family",
-               "hardware.count", "hardware.first", "hardware.last", "reading.changes", "reading.limitations",
+               "detail.knownIn", "detail.openSince", "detail.dropped", "detail.noMention", "hardware.model", "hardware.status", "hardware.support",
+               "hardware.first", "hardware.last", "reading.changes", "reading.limitations",
                "reading.changesPage", "reading.limitationsPage", "bug.branchKnown", "bug.branchLimitation",
                "bug.firstKnown", "bug.firstLimitation", "bug.limitationsPage", "bug.knownPage", "bug.seriesFix"}
     assert used - keys("fr") == set()

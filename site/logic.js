@@ -196,6 +196,37 @@ function officialUrl(site, pages, page) {
   return page === null || page === undefined ? null : `${site}${pages[page]}`;
 }
 
+/**
+ * What the vendor says of a model's end of life, as groups of variants. An
+ * announcement gives the last software version (LSV) and the end of support;
+ * a suggested release can also be marked as the last one ("LSV"). A group is "stopped"
+ * when its last software comes before the latest branch, "ended" when its
+ * support is over. The model is "stopped" as soon as one of its groups is, or
+ * "announced" when it only has announcements, or "none".
+ */
+function hardwareStatus(entry, latestBranch, today) {
+  const groups = entry.eol.map(([variants, bulletin, lastSoftware, endOfSupport, page]) => ({ variants, bulletin, lastSoftware, endOfSupport, page }));
+  for (const [platform, , releases, last] of entry.suggested) {
+    if (!last || !releases.length) continue;
+    const lastSoftware = releases.map((release) => release.match(/^\d+\.\d+/)[0]).sort(compareBranches).pop();
+    // The bulletin already gives this branch: the suggestion adds nothing.
+    if (groups.some((group) => group.lastSoftware === lastSoftware)) continue;
+    // The suggestion names the model itself: its LSV completes the announcements that do not give one.
+    const silent = groups.filter((group) => !group.lastSoftware);
+    if (entry.model === platform && silent.length) {
+      for (const group of silent) group.lastSoftware = lastSoftware;
+      continue;
+    }
+    groups.push({ variants: [platform], bulletin: null, lastSoftware, endOfSupport: null, page: null, suggested: true });
+  }
+  for (const group of groups) {
+    group.stopped = Boolean(group.lastSoftware) && compareBranches(group.lastSoftware, latestBranch) < 0;
+    group.ended = Boolean(group.endOfSupport) && group.endOfSupport < today;
+  }
+  const key = groups.some((group) => group.stopped || group.ended) ? "stopped" : groups.length ? "announced" : "none";
+  return { key, groups };
+}
+
 /** Tab-separated text, which spreadsheets and mail clients paste as a table. */
 function tableText(rows) {
   return rows.map((row) => row.map((cell) => String(cell ?? "").replace(/\s+/g, " ").trim()).join("\t")).join("\n");
@@ -204,6 +235,6 @@ function tableText(rows) {
 if (typeof module !== "undefined") {
   module.exports = {
     releaseParts, covers, firstFixes, statusAt, branchSupport, supportedBranches, hardwareMatch, searchTerms, idTerm,
-    matchesTerms, upgradeGroup, upgradePath, versionChanges, upgradeReading, modelSummaries, officialUrl, tableText,
+    matchesTerms, upgradeGroup, upgradePath, versionChanges, upgradeReading, modelSummaries, officialUrl, tableText, hardwareStatus,
   };
 }

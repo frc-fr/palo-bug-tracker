@@ -49,6 +49,11 @@ Vos recherches et vos filtres restent dans votre navigateur : ils ne sont ni enr
   de toutes les pages.
 - Dates de support : page [End-of-Life Summary](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary)
   de Palo Alto Networks, tableau « PAN-OS & Panorama » (support standard et support étendu).
+- Matériel : page [Hardware End-of-Life Dates](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates),
+  avec la date de fin de vie et la dernière version de PAN-OS de chaque produit. Seules les lignes qui
+  citent un pare-feu ou une appliance sont gardées : une carte, un disque ou un transceiver ne dit rien du
+  modèle. Résultat dans `sources/hardware.json` ; une page illisible garde les dernières valeurs.
+- La version préférée de Palo Alto Networks est sur une page réservée aux clients : elle n'est pas reprise.
 
 ## Mise à jour
 

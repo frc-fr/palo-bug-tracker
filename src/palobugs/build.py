@@ -11,6 +11,7 @@ from typing import Dict, List, Optional
 from .collect import SITE, load_pages
 from .extract import read_changes
 from .feed import build_feed, latest_changes
+from .hardware import hardware_index, load
 from .normalize import families_in, family_key, family_of_model, model_key, models_in
 from .versions import PRODUCT, branch_key, branch_of, bug_key, train_of, version_key
 
@@ -48,7 +49,8 @@ def change_release(branch: str, text: str, releases: List[str]) -> str:
     return releases[0]
 
 
-def build_data(documents: List[dict], pages_meta: Dict[str, dict], lifecycle: dict, changes_log: List[dict]) -> dict:
+def build_data(documents: List[dict], pages_meta: Dict[str, dict], lifecycle: dict, changes_log: List[dict],
+               eol: Optional[dict] = None) -> dict:
     """Index and bugs. The releases come from their pages, the facts from the rows of these pages."""
     page_paths = sorted({doc["path"] for doc in documents})
     page_positions = {path: i for i, path in enumerate(page_paths)}
@@ -190,17 +192,18 @@ def build_data(documents: List[dict], pages_meta: Dict[str, dict], lifecycle: di
         "models": [[model, family_positions[family_of_model(model)]] for model in models],
         "versions": index_versions,
         "lifecycle": lifecycle,
+        "hardware": hardware_index(models, eol),
     }
     return {"index": index, "bugs": {"bugs": rows}}
 
 
 def build_site(extracted: Path, pages_path: Path, changes_path: Path, lifecycle_path: Path, schedule_path: Path,
-               sources: Path, dist: Path, base_url: str) -> dict:
+               sources: Path, dist: Path, base_url: str, hardware_path: Path = Path("sources/hardware.json")) -> dict:
     documents = load_extracted(extracted)
     pages_meta = load_pages(pages_path)
     lifecycle = json.loads(lifecycle_path.read_text(encoding="utf-8")) if lifecycle_path.exists() else {"source": None, "branches": {}}
     all_changes = read_changes(changes_path)
-    data = build_data(documents, pages_meta, lifecycle, all_changes)
+    data = build_data(documents, pages_meta, lifecycle, all_changes, load(hardware_path))
     data["index"].update({
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "schedule": read_schedule(schedule_path),
@@ -222,6 +225,7 @@ def build_site(extracted: Path, pages_path: Path, changes_path: Path, lifecycle_
         "hotfixes": sum(1 for v in data["index"]["versions"] if v["hotfix"]),
         "families": len(data["index"]["families"]),
         "models": len(data["index"]["models"]),
+        "hardware": len(data["index"]["hardware"]["models"]),
         "bugs": len(rows),
         "with model": sum(1 for row in rows if row[3]),
         "with family": sum(1 for row in rows if row[4]),
