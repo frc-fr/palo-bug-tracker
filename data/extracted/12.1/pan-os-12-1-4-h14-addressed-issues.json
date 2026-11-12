@@ -1,0 +1,4 @@
+{"path": "ngfw/release-notes/12-1/pan-os-12-1-4-known-and-addressed-issues/pan-os-12-1-4-h14-addressed-issues", "branch": "12.1", "kind": "addressed", "title": "PAN-OS 12.1.4-h14 Addressed Issues", "version": "12.1.4-h14", "skipped": 1, "issues": [
+  {"ids": ["PAN-334304"], "description": "Few configs which pushed from SCM to firewall were causing the firewall to loose its internet connectivity and the firewall wasn't able to connect to cloud and was getting stuck at discovery stage retrying indefinitely without returning failure. And now ACR performs the the config rollback once the 5 cloud connectivity check attempts failed.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-309170"], "description": "Fixed an issue where the firewall silently rebooted due to the DDR memory operating at 1866 MHz. With this fix, the frequency is reduced to 1600 MHz to improve device stability.", "workaround": null, "resolved_in": null}
+]}

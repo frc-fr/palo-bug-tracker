@@ -1,0 +1,4 @@
+{"path": "pan-os/10-2/pan-os-release-notes/pan-os-10-2-7-known-and-addressed-issues/pan-os-10-2-7-h40-addressed-issues", "branch": "10.2", "kind": "addressed", "title": "PAN-OS 10.2.7-h40 Addressed Issues", "version": "10.2.7-h40", "skipped": 1, "issues": [
+  {"ids": ["PAN-277135"], "description": "Fixed an issue where the firewall stopped responding when a DNS client closed or reset a TCP connection while the firewall was sending a response.", "workaround": null, "resolved_in": null},
+  {"ids": ["PAN-231386"], "description": "Fixed an issue where the configd process stopped responding during certificate verification.", "workaround": null, "resolved_in": null}
+]}
