@@ -3,6 +3,8 @@
 Site statique de suivi des bugs de PAN-OS et de leurs corrections, construit à partir des Release Notes
 publiques de Palo Alto Networks.
 
+Site : https://frc-fr.github.io/palo-bug-tracker/
+
 Ce projet est indépendant. Il n'est pas affilié à Palo Alto Networks.
 Les informations sont fournies à titre indicatif : vérifiez toujours la documentation officielle.
 
@@ -12,7 +14,8 @@ Les informations sont fournies à titre indicatif : vérifiez toujours la docume
 - Toutes les branches publiées depuis PAN-OS 8.1, avec mise en avant des branches supportées, sans masquer les autres
 - Comparaison de deux versions : bugs corrigés, nouveaux problèmes connus, problèmes toujours présents,
   changements de comportement par défaut (« Changes to Default Behavior ») et pages à lire avant la mise à niveau
-- Liste des modèles cités dans les bugs
+- Onglet Matériel : versions dont les notes citent chaque modèle, statut et fin de support selon Palo Alto
+  Networks
 - Suivi des nouveautés, avec un flux RSS/Atom
 - Interface en français et en anglais
 
@@ -58,7 +61,8 @@ Vos recherches et vos filtres restent dans votre navigateur : ils ne sont ni enr
 ## Mise à jour
 
 Un traitement GitHub Actions s'exécute du lundi au vendredi à 9 h 15, 14 h 15 et 19 h 00, heure de
-Paris, et sur lancement manuel. Il collecte, extrait, contrôle, puis publie le site sur GitHub Pages. Si
+Paris, et sur lancement manuel. Cet horaire est décrit dans `sources/schedule.yml`, que le site lit pour
+l'afficher. Il collecte, extrait, contrôle, puis publie le site sur GitHub Pages. Si
 un contrôle échoue, le site garde ses dernières données valides.
 
 À chaque passage, seul le sitemap est relu en entier ; seules les pages nouvelles ou modifiées depuis le

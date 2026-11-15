@@ -4,7 +4,7 @@ title: Règles de palo-bug-tracker
 description: Règles communes aux bug trackers et particularités de PAN-OS.
 resource: https://github.com/frc-fr/palo-bug-tracker
 tags: [rules, pan-os, palo-alto-networks, bug-tracker]
-timestamp: 2026-11-09T18:30:00+01:00
+timestamp: 2026-11-15T20:00:00+01:00
 product: PAN-OS
 site: https://frc-fr.github.io/palo-bug-tracker/
 ---
@@ -21,7 +21,8 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
   - `collect` : met à jour l'état des sources et télécharge ce qui a changé.
   - `extract` : lit les documents en cache ; échoue au moindre avertissement.
   - `build` : croise les données et génère `dist/`.
-- Modules : `collect`, `parser`, `extract`, `normalize` (matériel), `lifecycle` (dates de support), `build`, `feed`, `cli`.
+- Modules communs : `collect`, `parser`, `extract`, `normalize` (matériel), `build`, `feed`, `cli`.
+- Modules propres au fournisseur (dates de support, fin de vie du matériel, sources annexes) : nommés d'après ce qu'ils lisent, décrits dans ses particularités.
 
 ### Répertoires
 
@@ -63,7 +64,7 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Chaque fait renvoie à la page officielle exacte qui le porte.
 - Textes des bugs laissés en anglais, tels que publiés.
 - Statuts déduits des notes, jamais inventés ; « Inconnu » expliqué et masqué par défaut.
-- Un modèle cité ne veut pas dire « seul ce modèle est touché ». Filtre matériel inclusif.
+- Un modèle cité ne veut pas dire « seul ce modèle est touché ». Filtre matériel inclusif : avec un modèle choisi, bugs qui le citent, ceux qui ne citent que sa famille et ceux qui ne citent aucun matériel.
 - Un bug à la fois correction et changement de comportement n'est compté qu'une fois.
 - Une version annoncée mais pas encore publiée est marquée « non publiée ».
 - Toutes les branches restent consultables ; les branches supportées sont mises en avant.
@@ -91,18 +92,20 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 
 ## Matériel et nouveautés
 
-- Onglet Matériel : pastilles de statut (« Tous » en premier, puis « Plus dans la dernière branche » ou son équivalent).
-- Colonnes : Modèle, Première version, Dernière version, Statut <logiciel>, Version recommandée, Fin de support.
+- Onglet Matériel : pastilles « Tous », « Aucune fin annoncée », « Fin de vie annoncée », « Plus maintenu », dans cet ordre.
+- « Plus maintenu » : le fournisseur ne publie plus de version pour ce modèle (dernière version avant la dernière branche, fin de maintenance logicielle ou fin de support passée). La note de l'onglet dit laquelle.
+- Colonnes : Modèle, Première version, Dernière version, Statut <logiciel>, Version recommandée, Fin de support. Mêmes libellés partout.
+- Filtre « Modèle ou famille » ; un modèle qu'aucun bug ne cite renvoie vers sa famille.
 - Statut tiré d'une source officielle du fournisseur : il dit, sans le deviner, si le matériel est encore maintenu.
 - Fin de vie annoncée par référence : variantes affichées séparément, pièces détachées et modules écartés.
 - Pas de source : « Aucune fin annoncée », jamais « supporté ».
-- Version recommandée seulement si le fournisseur la publie sans compte ; sinon la colonne est absente, et la note dit pourquoi.
+- Version recommandée seulement si le fournisseur la publie sans compte ; sinon la colonne est absente, et la note dit pourquoi. Libellé fidèle au mot du fournisseur (« suggérée », « actuelles ») : ne pas affirmer plus que lui.
 - Rechercher : un modèle choisi affiche ce que le fournisseur dit de lui (statut, version recommandée, fin de support).
-- Quoi de neuf : cartes « Dernière version publiée », « Dernier document mis à jour », puis « Recommandée par <fournisseur> » si elle existe.
+- Quoi de neuf : cartes « Dernière version publiée », « Dernière note mise à jour », puis la version recommandée du fournisseur si elle existe, avec son mot (« Recommandée par Fortinet », « Suggérée par Juniper »).
 
 ## Design
 
-- Même structure et mêmes jetons de couleur dans les trois sites.
+- Même structure et mêmes jetons de couleur dans les cinq sites.
 - Couleur du fournisseur en touche seulement : bordure haute et nom du produit.
 - Contraste professionnel, rien qui « pique les yeux ».
 - Cohérence entre pages : mêmes pastilles partout, pas de tuiles géantes.
@@ -123,6 +126,8 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Mentions légales FR et EN, avec la liste des services et composants tiers.
 - Code sous AGPL 3.0 ou ultérieure ; contenus du fournisseur exclus.
 - README générique : rien de sensible ni de personnel.
+- Plan unique des README : Fonctionnalités, Ce que disent les notes, Sources, Mise à jour, Liens utiles chez <fournisseur>, Développement, Licence, Contact.
+- Plan unique des particularités de ce fichier : Logiciels (si plusieurs), Versions, Sources, Extraction, Matériel, Affichage, Citations.
 
 # Particularités PAN-OS
 
@@ -155,7 +160,7 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Ne pas doubler un bug déjà dans les Known Issues d'une version précise.
 - Coquilles tolérées : identifiant collé au texte, `PAN- 155147`, `RLP—146384`, `254927` seul, titre `9-1-16-h3`.
 
-## CN-Series
+### CN-Series
 
 - Une page Known Issues et une page Addressed Issues par génération : « CN-Series 10.x », « 11.x ».
 - Seules les pages sous `cn-series-<n>-x-release-notes/` sont lues ; les copies à la racine sont anciennes.
@@ -187,4 +192,5 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 
 [1] [robots.txt de docs.paloaltonetworks.com](https://docs.paloaltonetworks.com/robots.txt)
 [2] [End-of-Life Summary](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary)
-[3] [Where to find the current preferred software versions?](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PMViCAO)
+[3] [Hardware End-of-Life Dates](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates)
+[4] [Where to find the current preferred software versions?](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PMViCAO)
