@@ -17,6 +17,7 @@ Les informations sont fournies à titre indicatif : vérifiez toujours la docume
 - Onglet Matériel : versions dont les notes citent chaque modèle, statut et fin de support selon Palo Alto
   Networks
 - Suivi des nouveautés, avec un flux RSS/Atom
+- Page « État du traitement », en bas de page : ce que le dernier traitement n'a pas lu, et pourquoi
 - Interface en français et en anglais
 
 Vos recherches et vos filtres restent dans votre navigateur : ils ne sont ni enregistrés ni transmis.
@@ -38,6 +39,12 @@ Vos recherches et vos filtres restent dans votre navigateur : ils ne sont ni enr
   cette génération, jusqu'à sa correction. Une correction est indiquée sans être placée sur une version.
 - Les notes ne donnent pas de date de publication : une version est datée du jour où l'outil la découvre.
 - Les correctifs de sécurité sont écartés et les références CVE retirées des descriptions.
+- Certaines lignes ne disent pas assez pour être suivies : problème sans identifiant (un tiret à sa
+  place), correction CN-Series sans version. Elles sont écartées ou montrées sans version par une règle
+  connue. Une ligne dont la première cellule n'est pas un identifiant est « non comprise » : le reste de
+  la page est publié, et la page « État du traitement » le montre.
+- Chaque identifiant listé par une page finit lu, écarté par une règle ou non compris. Un identifiant
+  compté nulle part rend la page « suspecte ».
 
 ## Sources
 
@@ -62,8 +69,10 @@ Vos recherches et vos filtres restent dans votre navigateur : ils ne sont ni enr
 
 Un traitement GitHub Actions s'exécute du lundi au vendredi à 9 h 15, 14 h 15 et 19 h 00, heure de
 Paris, et sur lancement manuel. Cet horaire est décrit dans `sources/schedule.yml`, que le site lit pour
-l'afficher. Il collecte, extrait, contrôle, puis publie le site sur GitHub Pages. Si
-un contrôle échoue, le site garde ses dernières données valides.
+l'afficher. Il collecte, extrait, publie le site sur GitHub Pages, puis contrôle. Ce que le code ne sait pas
+lire est publié dans `data/report.json` et sur la page « État du traitement » ; le passage finit en échec
+pour le signaler. La mise à jour ne s'arrête que si moins de 75 % des pages sont lues : le site garde alors
+sa version précédente.
 
 À chaque passage, seul le sitemap est relu en entier ; seules les pages nouvelles ou modifiées depuis le
 dernier passage sont téléchargées et relues.
@@ -91,6 +100,7 @@ Pour récupérer les pages puis prévisualiser le site :
 ```sh
 .venv/bin/palobugs collect
 .venv/bin/palobugs extract
+.venv/bin/palobugs check
 .venv/bin/palobugs --base-url http://localhost:8020/ build
 python3 -m http.server 8020 --directory dist
 ```

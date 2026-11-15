@@ -19,9 +19,10 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Python côté collecte, JavaScript sans framework côté navigateur.
 - Paquet Python `<fournisseur>bugs`, une commande par étape :
   - `collect` : met à jour l'état des sources et télécharge ce qui a changé.
-  - `extract` : lit les documents en cache ; échoue au moindre avertissement.
+  - `extract` : lit les documents en cache et écrit le rapport de traitement ; n'échoue que sous le seuil de publication.
   - `build` : croise les données et génère `dist/`.
-- Modules communs : `collect`, `parser`, `extract`, `normalize` (matériel), `build`, `feed`, `cli`.
+  - `check` : échoue s'il reste un document non compris, suspect ou inaccessible, ou une source en échec.
+- Modules communs : `collect`, `parser`, `extract`, `normalize` (matériel), `build`, `feed`, `report` (identique partout), `cli`.
 - Modules propres au fournisseur (dates de support, fin de vie du matériel, sources annexes) : nommés d'après ce qu'ils lisent, décrits dans ses particularités.
 
 ### Répertoires
@@ -30,6 +31,7 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - `.cache/` : documents bruts. Non versionné, gardé par le cache de la CI.
 - `data/extracted/` : un JSON par document, une ligne par bug pour des diffs lisibles. Commité.
 - `data/changes.json` : journal des nouveautés. Absent au départ : la première extraction sert de référence.
+- `data/report.json` : rapport du dernier traitement, une ligne par document. Commité.
 - `site/` : `index.html`, `app.js` (affichage), `logic.js` (règles de statut, testables), `i18n.js`, `theme.js`, `style.css`, mentions légales FR/EN.
 - `dist/` : site généré, avec `data/*.json` compacts et `feed.xml`. Non versionné.
 
@@ -53,7 +55,8 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - 2 secondes minimum entre deux requêtes, User-Agent du projet.
 - Ne recharger que ce qui a changé (ETag, Last-Modified, lastmod du sitemap).
 - Résultats d'extraction commités dans `data/` : vider le cache CI ne relance pas tout.
-- Un avertissement d'extraction arrête la mise à jour : le site garde ses dernières données valides.
+- Un document non compris est publié pour ce qui est compris ; un document qui ne se lit plus ou perd plus de la moitié de ses bugs garde sa dernière lecture valide.
+- La mise à jour ne s'arrête que si moins de 75 % des documents sont lus : le site garde alors sa version précédente plutôt qu'un site vide.
 - Une source annexe (dates de support…) en échec garde ses dernières valeurs.
 - Le navigateur ne contacte jamais de service tiers.
 
@@ -90,6 +93,17 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Données uniformes entre fournisseurs : pas d'information propre à un seul fournisseur si elle n'aide pas l'exploitation (ex. date de mise en vente).
 - Plusieurs systèmes : sélecteur de logiciel, libellé visible « Logiciel », jamais un choix de matériel.
 
+## État du traitement
+
+- Page `etat.html`, liée en bas de page sur la ligne des mentions légales, en petit. Aucune pastille ailleurs.
+- Même page, même `status.js`, même style et mêmes textes dans les cinq sites ; seuls les codes de règle propres au fournisseur diffèrent.
+- Statuts : lu, écarté par règle, suspect, non compris, inaccessible. Seuls les quatre derniers sont détaillés.
+- Chaque identifiant de bug listé par l'éditeur finit lu, écarté par règle ou non compris ; sinon il est « non compté » et le document est suspect.
+- Chaque constat donne la page exacte de l'éditeur, l'endroit (section, légende), le nombre de bugs, quelques identifiants et la date depuis laquelle il dure.
+- Contenus non exploités : sections jamais lues, identifiants cités hors des listes de bugs.
+- Sources : chaque étape de la collecte, son dernier succès et ses erreurs.
+- Spécification détaillée : `bug-trackers-status-spec.md` (hors dépôts).
+
 ## Matériel et nouveautés
 
 - Onglet Matériel : pastilles « Tous », « Aucune fin annoncée », « Fin de vie annoncée », « Plus maintenu », dans cet ordre.
@@ -115,7 +129,7 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 - Cron du lundi au vendredi : 9 h 15, 14 h 15, 19 h 00, Europe/Paris.
 - Horaire décrit dans `sources/schedule.yml` et affiché sur le site, qui le lit au build.
 - Workflow GitHub sans déclencheur `schedule` (retardé ou oublié par GitHub) : lancé par `workflow_dispatch`.
-- Ordre : tests, collecte, extraction, tests sur le corpus réel, commit des données, build, GitHub Pages.
+- Ordre : tests, collecte, extraction, commit des données, build, GitHub Pages, puis tests sur le corpus réel et `check` : un passage rouge demande d'adapter le code, le site est déjà à jour.
 - Flux RSS/Atom des nouveautés.
 - CSP stricte : aucun script, style ou service tiers.
 
@@ -123,7 +137,7 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 
 - Outil créé et maintenu par FR Consulting ; contact@fr-consulting.fr ; lien vers fr-consulting.fr.
 - Site indépendant, non affilié au fournisseur. Jamais « approuvé par ».
-- Mentions légales FR et EN, avec la liste des services et composants tiers.
+- Mentions légales FR et EN, avec la liste des services et composants tiers. Lien « État du traitement » sur la même ligne.
 - Code sous AGPL 3.0 ou ultérieure ; contenus du fournisseur exclus.
 - README générique : rien de sensible ni de personnel.
 - Plan unique des README : Fonctionnalités, Ce que disent les notes, Sources, Mise à jour, Liens utiles chez <fournisseur>, Développement, Licence, Contact.
@@ -154,18 +168,24 @@ Section identique dans forti-, juni-, palo-, cisco- et f5-bug-tracker. Toute mod
 ## Extraction
 
 - Pages lues : Addressed Issues, Known Issues, Limitations, Changes to Default Behavior, et pages CN-Series.
-- Ligne sans identifiant listant des CVE : écartée.
-- « This issue is now resolved. See PAN-OS x Addressed Issues » : correction en x si absente ailleurs.
+- Ligne sans identifiant listant des CVE : écartée, règle `security`.
+- Ligne dont l'identifiant est un tiret, sans CVE : problème sans identifiant, écarté, règle `no_id`.
+- « This issue is now resolved. See PAN-OS x Addressed Issues » : correction en x si absente ailleurs ; si x n'a pas de page, correction non placée, règle `resolved_unplaced`.
 - Limitations et Known Issues de branche : valent pour chaque version jusqu'à la correction.
-- Ne pas doubler un bug déjà dans les Known Issues d'une version précise.
+- Ne pas doubler un bug déjà dans les Known Issues d'une version précise : règle `known_repeated` sur la page de branche.
 - Coquilles tolérées : identifiant collé au texte, `PAN- 155147`, `RLP—146384`, `254927` seul, titre `9-1-16-h3`.
+- Non compris (`row_unknown`) : ligne dont la première cellule n'est pas un identifiant, ou identifiant sans description. Addressed Issues PAN-OS sans version dans le titre : `release_unknown`, non publiées.
+- Identifiant listé : première cellule d'une ligne, aux préfixes connus (`PAN`, `WF500`, `PLUG`, `APL`, `APPORTAL`, `CN`, `DRS`, `GPC`, `RLP`, `WIF`) ; dans une ligne lue, seule la cellule d'identifiant compte. Un identifiant d'un tableau non lu (ligne d'une seule cellule dans une page de changements…) est « non compté ».
+- Identifiants cités hors des tableaux (paragraphes, listes) : contenus non exploités ; ceux des descriptions ne comptent pas.
+- Page sortie du sitemap : inaccessible, règle `unlisted` ; erreur HTTP à la collecte : `http`. Les deux gardent leur dernière lecture.
+- Sources du rapport : `sitemap`, `pages`, `lifecycle`, `hardware`.
 
 ### CN-Series
 
 - Une page Known Issues et une page Addressed Issues par génération : « CN-Series 10.x », « 11.x ».
 - Seules les pages sous `cn-series-<n>-x-release-notes/` sont lues ; les copies à la racine sont anciennes.
 - Known Issues : valent pour chaque version de maintenance des branches de la génération, jusqu'à la correction.
-- Addressed Issues : pas de version ; affichées « CN-Series 10.x (version non précisée) », sans événement.
+- Addressed Issues : pas de version ; affichées « CN-Series 10.x (version non précisée) », sans événement. Règle `series_release`.
 - Bugs de ces pages rattachés d'office à la famille CN-Series.
 
 ## Matériel

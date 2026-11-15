@@ -12,13 +12,13 @@ from .collect import SITE, load_pages
 from .extract import read_changes
 from .feed import build_feed, latest_changes
 from .hardware import hardware_index, load
+from .report import load as load_report
 from .normalize import families_in, family_key, family_of_model, model_key, models_in
-from .versions import PRODUCT, branch_key, branch_of, bug_key, train_of, version_key
+from .versions import PRODUCT, SERIES_NAME, branch_key, branch_of, bug_key, train_of, version_key
 
 log = logging.getLogger(__name__)
 
 STATUS_CODES = {"addressed": "r", "known": "k", "limitations": "l"}
-SERIES_NAME = "CN-Series"
 
 
 def is_series(branch: str) -> bool:
@@ -198,14 +198,16 @@ def build_data(documents: List[dict], pages_meta: Dict[str, dict], lifecycle: di
 
 
 def build_site(extracted: Path, pages_path: Path, changes_path: Path, lifecycle_path: Path, schedule_path: Path,
-               sources: Path, dist: Path, base_url: str, hardware_path: Path = Path("sources/hardware.json")) -> dict:
+               sources: Path, dist: Path, base_url: str, hardware_path: Path = Path("sources/hardware.json"),
+               report_path: Path = Path("data/report.json")) -> dict:
     documents = load_extracted(extracted)
     pages_meta = load_pages(pages_path)
     lifecycle = json.loads(lifecycle_path.read_text(encoding="utf-8")) if lifecycle_path.exists() else {"source": None, "branches": {}}
     all_changes = read_changes(changes_path)
     data = build_data(documents, pages_meta, lifecycle, all_changes, load(hardware_path))
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     data["index"].update({
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "updated": updated,
         "schedule": read_schedule(schedule_path),
     })
     changes = latest_changes(all_changes, documents)
@@ -219,6 +221,10 @@ def build_site(extracted: Path, pages_path: Path, changes_path: Path, lifecycle_
         (folder / name).write_text(json.dumps(content, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     descriptions = {row[0]: row[1] for row in data["bugs"]["bugs"]}
     (dist / "feed.xml").write_bytes(build_feed(changes, descriptions, base_url))
+    # What the last run could not read, for etat.html.
+    processing = load_report(report_path)
+    processing["updated"] = updated
+    (folder / "report.json").write_text(json.dumps(processing, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     rows = data["bugs"]["bugs"]
     return {
         "versions": len(data["index"]["versions"]),

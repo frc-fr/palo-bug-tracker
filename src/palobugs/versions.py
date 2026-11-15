@@ -9,6 +9,8 @@ from typing import Tuple
 
 VERSION = re.compile(r"^(\d+)\.(\d+)\.(\d+)(?:-h(\d+))?$")
 PRODUCT = "PAN-OS"
+# CN-Series publishes its issues per generation of PAN-OS, "CN-Series 10.x".
+SERIES_NAME = "CN-Series"
 
 
 def version_key(version: str) -> Tuple[int, ...]:

@@ -209,3 +209,50 @@ def test_hardware_rows_keep_firewalls_and_appliances():
     assert list(index["models"]) == ["M-100", "PA-220", "PA-460"]
     assert index["models"]["PA-220"]["eol"] == [[["PA-220"], None, "10.2", "2028-01-31", found[0]["page"]]]
     assert index["models"]["PA-220"]["family"] == "PA-200 Series"
+
+
+def test_every_listed_issue_is_accounted_for():
+    text = page(
+        "PAN-OS 11.2.13 Known Issues",
+        row("<b>PAN-1001</b>", "Commit fails, as PAN-1009 did."),
+        row("<b>—</b>", "Fixes were made to address CVE-2026-0001."),
+        row("<b>—</b>", "Upgrading takes an hour."),
+        row("Panorama", "PAN-1002 Commit fails."),
+        '<tr class="row"><td class="entry">PAN-1003</td></tr>',
+    ).replace("</table>", "</table><ul><li>PAN-1004 Cited in a list.</li></ul>")
+    result = parser.parse_page(text, "pan-os/11-2/pan-os-release-notes/x/pan-os-11-2-13-known-issues")
+    buckets = result.accounting()
+    # The ID of a row read is its first cell: PAN-1009, cited in a description, is not listed.
+    assert buckets["read"] == {"PAN-1001"} and buckets["failed"] == {"PAN-1002", "PAN-1003"}
+    assert buckets["ruled"] == set() and buckets["unaccounted"] == set()
+    assert [f["rule"] for f in result.findings] == ["security", "no_id", "row_unknown", "row_unknown"]
+    assert result.skipped == 2 and len(result.warnings) == 2
+    assert result.prose == {"PAN-1004"} and result.headings == {"PAN-OS 11.2.13 Known Issues": True}
+    assert result.listed["PAN-1002"] == (collect.page_url("pan-os/11-2/pan-os-release-notes/x/pan-os-11-2-13-known-issues"),
+                                          "PAN-OS 11.2.13 Known Issues")
+
+
+def test_an_unread_table_leaves_its_ids_unaccounted():
+    text = TABLE.format(title="Changes to Default Behavior in PAN-OS 11.2", rows='<tr class="row"><td class="entry">PAN-2001</td></tr>')
+    result = parser.parse_page(text, "pan-os/11-2/pan-os-release-notes/changes-to-default-behavior/changes-to-default-behavior-in-pan-os-11-2")
+    assert result.accounting()["unaccounted"] == {"PAN-2001"}
+
+
+def test_addressed_page_without_release():
+    text = page("Addressed Issues", row("PAN-3001", "Fixed."))
+    lost = parser.parse_page(text, "pan-os/11-2/pan-os-release-notes/x/pan-os-addressed-issues")
+    assert lost.issues == [] and lost.accounting()["failed"] == {"PAN-3001"}
+    assert [f["rule"] for f in lost.findings] == ["release_unknown"]
+    series = parser.parse_page(text, "cn-series/release-notes/cn-series-10-x-release-notes/addressed-issues-in-cn-series-10-x")
+    assert series.accounting()["read"] == {"PAN-3001"} and [f["rule"] for f in series.findings] == ["series_release"]
+
+
+def test_rules_across_pages():
+    documents = {
+        "a/k1": doc("a/k1", "known", "9.1.1", [issue("PAN-1"), issue("PAN-2", resolved="9.1.99")]),
+        "a/all": {**doc("a/all", "known", None, [issue("PAN-1"), issue("PAN-3")]), "branch": "9.1", "title": "Known Issues"},
+    }
+    documents["a/k1"]["title"] = "PAN-OS 9.1.1 Known Issues"
+    found = extract.crossed(documents)
+    assert [(f["rule"], f["ids"]) for f in found["a/k1"]] == [("resolved_unplaced", ["PAN-2"])]
+    assert [(f["rule"], f["ids"]) for f in found["a/all"]] == [("known_repeated", ["PAN-1"])]
