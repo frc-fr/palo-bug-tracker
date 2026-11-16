@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T13:15:54+00:00",
+  "generated": "2026-11-16T18:00:39+00:00",
   "publication": {"minimum": 0.75, "published": true, "read_share": 1.0},
   "totals": {"documents": 502, "left_out": 146, "not_understood": 0, "read": 356, "suspect": 0, "unreachable": 0},
   "groups": [
@@ -155,9 +155,9 @@
   ],
   "unused": {"prose": [], "sections": []},
   "sources": [
-    {"count": 0, "errors": [], "last_success": "2026-11-16T13:15:52+00:00", "name": "hardware", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates"},
-    {"count": 0, "errors": [], "last_success": "2026-11-16T13:15:50+00:00", "name": "lifecycle", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary"},
-    {"count": 0, "errors": [], "last_success": "2026-11-16T13:15:48+00:00", "name": "pages", "since": null, "status": "ok", "url": null},
-    {"count": 0, "errors": [], "last_success": "2026-11-16T13:15:48+00:00", "name": "sitemap", "since": null, "status": "ok", "url": "https://docs.paloaltonetworks.com/sitemap.xml"}
+    {"count": 0, "errors": [], "last_success": "2026-11-16T18:00:37+00:00", "name": "hardware", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates"},
+    {"count": 0, "errors": [], "last_success": "2026-11-16T18:00:35+00:00", "name": "lifecycle", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary"},
+    {"count": 0, "errors": [], "last_success": "2026-11-16T18:00:34+00:00", "name": "pages", "since": null, "status": "ok", "url": null},
+    {"count": 0, "errors": [], "last_success": "2026-11-16T18:00:34+00:00", "name": "sitemap", "since": null, "status": "ok", "url": "https://docs.paloaltonetworks.com/sitemap.xml"}
   ]
 }
