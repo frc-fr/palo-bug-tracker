@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-19T18:00:42+00:00",
+  "generated": "2026-11-20T08:19:18+00:00",
   "publication": {"minimum": 0.75, "published": true, "read_share": 1.0},
   "totals": {"documents": 502, "left_out": 146, "not_understood": 0, "read": 356, "suspect": 0, "unreachable": 0},
   "groups": [
-    {"documents": 502, "failed": 0, "name": "PAN-OS", "read": 15058, "ruled": 0, "unaccounted": 0, "vendor": 15058}
+    {"documents": 502, "failed": 0, "name": "PAN-OS", "read": 15065, "ruled": 0, "unaccounted": 0, "vendor": 15065}
   ],
   "documents": [
     {"findings": [{"count": 1, "detail": "an issue the page names by no ID", "ids": [], "kind": "left_out", "page": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-2/limitations/limitations-in-pan-os-12-2", "rule": "no_id", "where": "Limitations in PAN-OS 12.2"}], "group": "PAN-OS", "ids": {"failed": 0, "read": 2, "ruled": 0, "unaccounted": [], "vendor": 2}, "kept": null, "key": "ngfw/release-notes/12-2/limitations/limitations-in-pan-os-12-2", "since": "2026-11-15", "status": "left_out", "title": "Limitations in PAN-OS 12.2", "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-2/limitations/limitations-in-pan-os-12-2"},
@@ -155,9 +155,9 @@
   ],
   "unused": {"prose": [], "sections": []},
   "sources": [
-    {"count": 0, "errors": [], "last_success": "2026-11-19T18:00:41+00:00", "name": "hardware", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates"},
-    {"count": 0, "errors": [], "last_success": "2026-11-19T18:00:39+00:00", "name": "lifecycle", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary"},
-    {"count": 0, "errors": [], "last_success": "2026-11-19T18:00:37+00:00", "name": "pages", "since": null, "status": "ok", "url": null},
-    {"count": 0, "errors": [], "last_success": "2026-11-19T18:00:37+00:00", "name": "sitemap", "since": null, "status": "ok", "url": "https://docs.paloaltonetworks.com/sitemap.xml"}
+    {"count": 0, "errors": [], "last_success": "2026-11-20T08:19:15+00:00", "name": "hardware", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates"},
+    {"count": 0, "errors": [], "last_success": "2026-11-20T08:19:14+00:00", "name": "lifecycle", "since": null, "status": "ok", "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary"},
+    {"count": 0, "errors": [], "last_success": "2026-11-20T08:19:11+00:00", "name": "pages", "since": null, "status": "ok", "url": null},
+    {"count": 0, "errors": [], "last_success": "2026-11-20T08:15:32+00:00", "name": "sitemap", "since": null, "status": "ok", "url": "https://docs.paloaltonetworks.com/sitemap.xml"}
   ]
 }

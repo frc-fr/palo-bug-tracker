@@ -20,5 +20,12 @@
   {"date": "2026-11-12", "version": "12.1.4-h14", "kind": "version", "bugs": ["PAN-309170", "PAN-334304"]},
   {"date": "2026-11-12", "version": "12.1.7-h12", "kind": "version", "bugs": ["PAN-283774", "PAN-309960", "PAN-313036", "PAN-317614", "PAN-323154", "PAN-326424", "PAN-328742", "PAN-329034", "PAN-330196", "PAN-330876", "PAN-331387", "PAN-331617", "PAN-332389", "PAN-334304", "PAN-335037", "PAN-335567", "PAN-338501", "PAN-339281", "PAN-341207", "PAN-341332", "PAN-341570"]},
   {"date": "2026-11-12", "version": "12.1.10-h4", "kind": "version", "bugs": ["PAN-312844", "PAN-323140", "PAN-323154", "PAN-323717", "PAN-330196", "PAN-330876", "PAN-331387", "PAN-331617", "PAN-332389", "PAN-334304", "PAN-334616", "PAN-334757", "PAN-335037", "PAN-335567", "PAN-337359", "PAN-338501", "PAN-338572", "PAN-338608", "PAN-338789", "PAN-339281", "PAN-341207", "PAN-341332", "PAN-341570"]},
-  {"date": "2026-11-12", "version": "12.2.4-h2", "kind": "version", "bugs": ["PAN-331498", "PAN-337127", "PAN-337475"]}
+  {"date": "2026-11-12", "version": "12.2.4-h2", "kind": "version", "bugs": ["PAN-331498", "PAN-337127", "PAN-337475"]},
+  {"date": "2026-11-20", "version": "11.2.10", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.11", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.12", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.13", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.14", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.15", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-20", "version": "11.2.16", "kind": "known_added", "bugs": ["PAN-342422"]}
 ]
