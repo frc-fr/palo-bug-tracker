@@ -27,5 +27,8 @@
   {"date": "2026-11-20", "version": "11.2.13", "kind": "known_added", "bugs": ["PAN-342422"]},
   {"date": "2026-11-20", "version": "11.2.14", "kind": "known_added", "bugs": ["PAN-342422"]},
   {"date": "2026-11-20", "version": "11.2.15", "kind": "known_added", "bugs": ["PAN-342422"]},
-  {"date": "2026-11-20", "version": "11.2.16", "kind": "known_added", "bugs": ["PAN-342422"]}
+  {"date": "2026-11-20", "version": "11.2.16", "kind": "known_added", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-23", "version": "11.2.16-h3", "kind": "version", "bugs": ["PAN-340201", "PAN-342422", "PAN-343799"]},
+  {"date": "2026-11-23", "version": "12.1.10-h6", "kind": "version", "bugs": ["PAN-317904", "PAN-335763", "PAN-337480", "PAN-338764", "PAN-338767", "PAN-339487", "PAN-341033"]},
+  {"date": "2026-11-23", "version": "12.2.4-h3", "kind": "version", "bugs": ["PAN-340201"]}
 ]

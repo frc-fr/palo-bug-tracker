@@ -1,0 +1,3 @@
+{"path": "ngfw/release-notes/12-2/pan-os-12-2-4-known-and-addressed-issues/pan-os-12-2-4-h3-addressed-issues", "branch": "12.2", "kind": "addressed", "title": "PAN-OS 12.2.4-h3 Addressed Issues", "version": "12.2.4-h3", "skipped": 1, "issues": [
+  {"ids": ["PAN-340201"], "description": "Fixed a timing issue that caused the Ethernet/HSCI port to remain in a DOWN state after a physical fiber reconnection or system reboot. The port now properly recovers to an UP state after the fix.", "workaround": null, "resolved_in": null}
+]}
