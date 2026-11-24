@@ -30,5 +30,22 @@
   {"date": "2026-11-20", "version": "11.2.16", "kind": "known_added", "bugs": ["PAN-342422"]},
   {"date": "2026-11-23", "version": "11.2.16-h3", "kind": "version", "bugs": ["PAN-340201", "PAN-342422", "PAN-343799"]},
   {"date": "2026-11-23", "version": "12.1.10-h6", "kind": "version", "bugs": ["PAN-317904", "PAN-335763", "PAN-337480", "PAN-338764", "PAN-338767", "PAN-339487", "PAN-341033"]},
-  {"date": "2026-11-23", "version": "12.2.4-h3", "kind": "version", "bugs": ["PAN-340201"]}
+  {"date": "2026-11-23", "version": "12.2.4-h3", "kind": "version", "bugs": ["PAN-340201"]},
+  {"date": "2026-11-24", "version": "10.2.7-h41", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "10.2.10-h45", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "10.2.13-h29", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "10.2.16-h14", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "10.2.18-h15", "kind": "version", "bugs": ["PAN-278611", "PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.4-h40", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.6-h42", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.7-h14", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.10-h38", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.13-h18", "kind": "version", "bugs": ["PAN-340201", "PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.1.16-h6", "kind": "version", "bugs": ["PAN-340201", "PAN-342422", "PAN-343799"]},
+  {"date": "2026-11-24", "version": "11.2.4-h25", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.2.7-h25", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.2.10-h19", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "11.2.13-h6", "kind": "version", "bugs": ["PAN-342422"]},
+  {"date": "2026-11-24", "version": "12.1.4-h15", "kind": "version", "bugs": []},
+  {"date": "2026-11-24", "version": "12.1.7-h15", "kind": "version", "bugs": ["PAN-311658", "PAN-316556", "PAN-317904", "PAN-335763", "PAN-338764", "PAN-338767"]}
 ]

@@ -127,7 +127,6 @@
   {"ids": ["PAN-223365"], "description": "Fixed an issue where Panorama was unable to query any logs if the Elasticsearch health status for any log collector was degraded.", "workaround": null, "resolved_in": null},
   {"ids": ["PAN-223172"], "description": "Fixed an issue on Panorama where host IDs manually added to the device quarantine list were unexpectedly removed.", "workaround": null, "resolved_in": null},
   {"ids": ["PAN-222188"], "description": "A CLI command was introduced to address an issue where SNMP monitoring performance was slower than expected, which resulted in snmpwalk timeouts.", "workaround": null, "resolved_in": null},
-  {"ids": ["PAN-222002"], "description": "Fixed an issue where content updates failed with the error message Unable to get key pancontent-8.0.pass from cryptod. Error -9.", "workaround": null, "resolved_in": null},
   {"ids": ["PAN-220931"], "description": "(Panorama appliances in FIPS-CC mode only) Fixed an issue where scheduled email reports did not contain PDF attachments.", "workaround": null, "resolved_in": null},
   {"ids": ["PAN-219805"], "description": "Fixed an issue where the reportd process stopped responding due to a race condition.", "workaround": null, "resolved_in": null},
   {"ids": ["PAN-219113"], "description": "Fixed an issue where, when a port on the NPC was configured for log forwarding, the ingress traffic on the card was sent for processing to the LPC, and the LPC card was reloaded when the ingress volume of traffic was high.", "workaround": null, "resolved_in": null},
